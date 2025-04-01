@@ -13,7 +13,19 @@ namespace ticket_windows_form.DB
     {
         private static int id_employee;
         private static int id_zona;
-        public static bool CreateConcert(string name, string paternal, string maternal, string stage_name, string manager, DateTime birhtdate, string location, int capacity, string organization, string concert_name, DateTime start_date, DateTime end_date)
+        public static bool CreateConcert(
+            string name, 
+            string paternal, 
+            string maternal, 
+            string stage_name, 
+            string manager, 
+            DateTime birhtdate, 
+            string location, 
+            int capacity, 
+            string organization, 
+            string concert_name, 
+            DateTime start_date, 
+            DateTime end_date)
         {
             bool res = false;
             try
@@ -40,7 +52,6 @@ namespace ticket_windows_form.DB
                         cmd.Parameters.AddWithValue("@stage_name", stage_name);
                         cmd.Parameters.AddWithValue("@manager", manager);
                         cmd.Parameters.AddWithValue("@birthdate", birhtdate);
-                        
                         id_artist = Convert.ToInt32(cmd.ExecuteScalar());
                     }
 
@@ -50,7 +61,7 @@ namespace ticket_windows_form.DB
                         return false;
                     }
 
-                    string query_concert = "INSERT INTO concierto (artista_id, empleado_id, zona_id, ubicacion_concierto, capacidad_total, organizacion, nombre_concierto, fecha_inicio, fecha_fin) VALUES (@id_artist, @id_employee, @id_zona, @location, @capacity, @organization, @concert_name, @start_date, @end_date)";
+                    string query_concert = "INSERT INTO concierto (id_artista, empleado_id, zona_id, ubicacion_concierto, capacidad_total, organizacion, nombre_concierto, fecha_inicio, fecha_fin) VALUES (@id_artist, @id_employee, @id_zona, @location, @capacity, @organization, @concert_name, @start_date, @end_date)";
                     using(NpgsqlCommand cmd = new NpgsqlCommand(query_concert, connection))
                     {
                         cmd.Parameters.AddWithValue("@id_artist", id_artist);

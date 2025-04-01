@@ -171,6 +171,13 @@
             // combo_super_vip
             // 
             this.combo_super_vip.FormattingEnabled = true;
+            this.combo_super_vip.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
             this.combo_super_vip.Location = new System.Drawing.Point(875, 246);
             this.combo_super_vip.Name = "combo_super_vip";
             this.combo_super_vip.Size = new System.Drawing.Size(145, 24);
@@ -179,6 +186,13 @@
             // combo_vip
             // 
             this.combo_vip.FormattingEnabled = true;
+            this.combo_vip.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
             this.combo_vip.Location = new System.Drawing.Point(875, 359);
             this.combo_vip.Name = "combo_vip";
             this.combo_vip.Size = new System.Drawing.Size(145, 24);
@@ -187,6 +201,13 @@
             // combo_general
             // 
             this.combo_general.FormattingEnabled = true;
+            this.combo_general.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
             this.combo_general.Location = new System.Drawing.Point(875, 464);
             this.combo_general.Name = "combo_general";
             this.combo_general.Size = new System.Drawing.Size(145, 24);
@@ -195,6 +216,10 @@
             // combo_method
             // 
             this.combo_method.FormattingEnabled = true;
+            this.combo_method.Items.AddRange(new object[] {
+            "QR",
+            "paypal",
+            "tarjeta"});
             this.combo_method.Location = new System.Drawing.Point(587, 563);
             this.combo_method.Name = "combo_method";
             this.combo_method.Size = new System.Drawing.Size(145, 24);

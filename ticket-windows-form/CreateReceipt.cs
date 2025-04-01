@@ -54,6 +54,7 @@ namespace ticket_windows_form
         {
             Tickets tickets = new Tickets();
             tickets.Show();
+            this.Hide();
         }
 
         private void box_amount_super_vip_TextChanged(object sender, EventArgs e)
@@ -88,8 +89,46 @@ namespace ticket_windows_form
 
         private void box_date_TextChanged(object sender, EventArgs e)
         {
-            string time = DateTime.Now.ToString("dd/MM/yyyy");
-            box_date.Text = time;
+            string fechaActual = DateTime.Now.ToString("dd/MM/yyyy");
+            box_date.Text = fechaActual;
         }
+
+        private void box_total_vip_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void box_total_general_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void box_amount_vip_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void box_amount_general_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtFechaNacimiento_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CreateReceipt_Load(object sender, EventArgs e)
+        {
+            string fechaActual = DateTime.Now.ToString("dd/MM/yyyy");
+            box_date.Text = fechaActual;
+        }
+
+
     }
 }

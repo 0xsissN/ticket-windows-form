@@ -51,8 +51,9 @@ namespace ticket_windows_form
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Sell sell = new Sell();
-            sell.Show();
+            Tickets tickets = new Tickets();
+            tickets.Show();
+            this.Hide();
         }
 
         private void iconButton1_Click(object sender, EventArgs e)

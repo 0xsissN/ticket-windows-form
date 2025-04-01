@@ -84,8 +84,9 @@ namespace ticket_windows_form
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Sell sell = new Sell();
-            sell.Show();
+            Tickets tickets = new Tickets();
+            tickets.Show();
+            this.Hide();
         }
 
         private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
@@ -95,7 +96,27 @@ namespace ticket_windows_form
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+            
+        }
 
+        private void Tickets_Load(object sender, EventArgs e)
+        {
+            int conciertoId = 1;
+            Ticket ticket = new Ticket();
+            string nombreConcierto = ticket.ObtenerNombreConcierto(conciertoId);
+
+            if (!string.IsNullOrEmpty(nombreConcierto))
+            {
+                textBox1.Text = nombreConcierto.Trim();
+            }
+            else
+            {
+                textBox1.Text = "Concierto no encontrado";
+            }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
         }
     }
 }

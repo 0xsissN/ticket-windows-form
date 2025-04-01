@@ -41,7 +41,7 @@ namespace ticket_windows_form.DB
                         return false;
                     }
 
-                    string query_artist = "INSERT INTO artista (nombre, ap_paterno, ap_materno, nom_artistico, manager, fecha_nacimiento) VALUES (@name, @paternal, @maternal, @stage_name, @manager, @birthdate) RETURNING id_artist";
+                    string query_artist = "INSERT INTO artista (nombre, ap_paterno, ap_materno, nom_artistico, manager, fecha_nacimiento) VALUES (@name, @paternal, @maternal, @stage_name, @manager, @birthdate) RETURNING id_artista";
                     int id_artist;
 
                     using (NpgsqlCommand cmd = new NpgsqlCommand(query_artist, connection))
@@ -61,7 +61,7 @@ namespace ticket_windows_form.DB
                         return false;
                     }
 
-                    string query_concert = "INSERT INTO concierto (id_artista, empleado_id, zona_id, ubicacion_concierto, capacidad_total, organizacion, nombre_concierto, fecha_inicio, fecha_fin) VALUES (@id_artist, @id_employee, @id_zona, @location, @capacity, @organization, @concert_name, @start_date, @end_date)";
+                    string query_concert = "INSERT INTO concierto (artista_id, empleado_id, zona_id, ubicacion_concierto, capacidad_total, organizacion, nombre_concierto, fecha_inicio, fecha_fin) VALUES (@id_artist, @id_employee, @id_zona, @location, @capacity, @organization, @concert_name, @start_date, @end_date)";
                     using(NpgsqlCommand cmd = new NpgsqlCommand(query_concert, connection))
                     {
                         cmd.Parameters.AddWithValue("@id_artist", id_artist);

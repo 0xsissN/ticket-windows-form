@@ -1,6 +1,6 @@
 ﻿namespace ticket_windows_form
 {
-    partial class Login
+    partial class SignUp
     {
         /// <summary>
         /// Required designer variable.
@@ -213,11 +213,11 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(126, 49);
             this.button1.TabIndex = 17;
-            this.button1.Text = "Añadir";
+            this.button1.Text = "Registrarse";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Login
+            // SignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -240,7 +240,7 @@
             this.Controls.Add(this.txtContrasena);
             this.Controls.Add(this.txtCarnetIdentidad);
             this.Controls.Add(this.txtFechaNacimiento);
-            this.Name = "Login";
+            this.Name = "SignUp";
             this.Text = "login";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -45,7 +45,7 @@ namespace ticket_windows_form
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Login login = new Login();
+            SignUp login = new SignUp();
             login.Show();
         }
 
@@ -53,6 +53,12 @@ namespace ticket_windows_form
         {
             Tickets tickets = new Tickets();
             tickets.Show();
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            User user = new User();
+            user.Show();
         }
     }
 }

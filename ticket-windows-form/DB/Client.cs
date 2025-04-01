@@ -38,5 +38,29 @@ namespace ticket_windows_form.DB
 
             return res;
         }
+
+        public static bool ValidateCredential(string email, string password) {
+            bool res = false;
+            try
+            {
+                NpgsqlConnection connection = Connection.GetConnection();
+                {
+                    string query = "SELECT COUNT(*) FROM cliente WHERE correo_electronico = @email AND contrasena = @password";
+                    using (NpgsqlCommand cmd = new NpgsqlCommand(query, connection)) 
+                    {
+                        cmd.Parameters.AddWithValue("@email", email);
+                        cmd.Parameters.AddWithValue("@password", password);
+                        cmd.ExecuteNonQuery();
+                        res = true;
+                    }
+                }
+            }
+            catch (Exception ex) 
+            {
+                MessageBox.Show("Error al iniciar sesión: " + ex.Message);
+            }
+
+            return res;
+        }
     }
 }

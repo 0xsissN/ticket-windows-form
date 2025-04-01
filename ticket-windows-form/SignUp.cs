@@ -11,9 +11,9 @@ using ticket_windows_form.DB;
 
 namespace ticket_windows_form
 {
-    public partial class Login : Form
+    public partial class SignUp : Form
     {
-        public Login()
+        public SignUp()
         {
             InitializeComponent();
         }

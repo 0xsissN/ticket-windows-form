@@ -72,6 +72,7 @@
             this.box_hiring_date.Name = "box_hiring_date";
             this.box_hiring_date.Size = new System.Drawing.Size(298, 26);
             this.box_hiring_date.TabIndex = 74;
+            this.box_hiring_date.TextChanged += new System.EventHandler(this.box_hiring_date_TextChanged);
             // 
             // box_charge
             // 
@@ -169,7 +170,7 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
             this.label4.Location = new System.Drawing.Point(543, 56);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(346, 45);
+            this.label4.Size = new System.Drawing.Size(277, 36);
             this.label4.TabIndex = 61;
             this.label4.Text = "Registrar Empleado";
             // 
@@ -179,7 +180,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label3.Location = new System.Drawing.Point(227, 56);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 36);
+            this.label3.Size = new System.Drawing.Size(0, 29);
             this.label3.TabIndex = 60;
             // 
             // box_maternal
@@ -205,6 +206,7 @@
             this.box_name.Name = "box_name";
             this.box_name.Size = new System.Drawing.Size(298, 26);
             this.box_name.TabIndex = 57;
+            this.box_name.TextChanged += new System.EventHandler(this.box_name_TextChanged);
             // 
             // label1
             // 
@@ -250,7 +252,7 @@
             this.txtCarnetIdentidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.txtCarnetIdentidad.Location = new System.Drawing.Point(52, 444);
             this.txtCarnetIdentidad.Name = "txtCarnetIdentidad";
-            this.txtCarnetIdentidad.Size = new System.Drawing.Size(116, 36);
+            this.txtCarnetIdentidad.Size = new System.Drawing.Size(93, 29);
             this.txtCarnetIdentidad.TabIndex = 50;
             this.txtCarnetIdentidad.Text = "Celular";
             // 

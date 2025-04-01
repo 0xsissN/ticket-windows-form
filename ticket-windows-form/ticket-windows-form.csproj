@@ -180,6 +180,9 @@
     <EmbeddedResource Include="CreateEmployee.resx">
       <DependentUpon>CreateEmployee.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CreateReceipt.resx">
+      <DependentUpon>CreateReceipt.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Index.resx">
       <DependentUpon>Index.cs</DependentUpon>
     </EmbeddedResource>
@@ -199,6 +202,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SignIn.resx">
       <DependentUpon>SignIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tickets.resx">
+      <DependentUpon>Tickets.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User.resx">
       <DependentUpon>User.cs</DependentUpon>

@@ -17,7 +17,6 @@ namespace ticket_windows_form
         public CreateEmployee()
         {
             InitializeComponent();
-            box_salary.KeyPress += restriction.OnlyNumbers;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -53,6 +52,16 @@ namespace ticket_windows_form
             {
                 MessageBox.Show("Error al agregar empleado: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void box_name_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void box_hiring_date_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

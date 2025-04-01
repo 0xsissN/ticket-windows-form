@@ -51,14 +51,26 @@ namespace ticket_windows_form
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Tickets tickets = new Tickets();
-            tickets.Show();
+            Sell sell = new Sell();
+            sell.Show();
         }
 
         private void iconButton1_Click(object sender, EventArgs e)
         {
             User user = new User();
             user.Show();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            CreateConcert create_concert = new CreateConcert();
+            create_concert.Show();
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            CreateEmployee create_employee = new CreateEmployee();
+            create_employee.Show();
         }
     }
 }

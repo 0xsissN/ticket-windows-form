@@ -18,15 +18,6 @@ namespace ticket_windows_form
         public CreateConcert()
         {
             InitializeComponent();
-            box_name.KeyPress += restriction.OnlyLetters;
-            box_paternal.KeyPress += restriction.OnlyLetters;
-            box_maternal.KeyPress += restriction.OnlyLetters;
-            box_stage_name.KeyPress += restriction.OnlyLetters;
-            box_manager.KeyPress += restriction.OnlyLetters;
-            box_location.KeyPress += restriction.OnlyLetters;
-            box_organization.KeyPress += restriction.OnlyLetters;
-            box_concert_name.KeyPress += restriction.OnlyLetters;
-            box_capacity.KeyPress += restriction.OnlyNumbers;
         }
 
         private void label3_Click(object sender, EventArgs e)

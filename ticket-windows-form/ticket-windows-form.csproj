@@ -102,8 +102,24 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CreateConcert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateConcert.Designer.cs">
+      <DependentUpon>CreateConcert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DB\Concert.cs" />
     <Compile Include="DB\Client.cs" />
     <Compile Include="DB\Connection.cs" />
+    <Compile Include="DB\Employee.cs" />
+    <Compile Include="DB\Restriction.cs" />
+    <Compile Include="DB\Zona.cs" />
+    <Compile Include="CreateEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateEmployee.Designer.cs">
+      <DependentUpon>CreateEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="Index.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +158,12 @@
     <Compile Include="User.Designer.cs">
       <DependentUpon>User.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CreateConcert.resx">
+      <DependentUpon>CreateConcert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateEmployee.resx">
+      <DependentUpon>CreateEmployee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Index.resx">
       <DependentUpon>Index.cs</DependentUpon>
     </EmbeddedResource>

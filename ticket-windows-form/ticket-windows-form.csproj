@@ -108,11 +108,21 @@
     <Compile Include="CreateConcert.Designer.cs">
       <DependentUpon>CreateConcert.cs</DependentUpon>
     </Compile>
+    <Compile Include="CreateReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateReceipt.Designer.cs">
+      <DependentUpon>CreateReceipt.cs</DependentUpon>
+    </Compile>
     <Compile Include="DB\Concert.cs" />
     <Compile Include="DB\Client.cs" />
     <Compile Include="DB\Connection.cs" />
     <Compile Include="DB\Employee.cs" />
+    <Compile Include="DB\Receipt.cs" />
     <Compile Include="DB\Restriction.cs" />
+    <Compile Include="DB\SellDetails.cs" />
+    <Compile Include="DB\SellTickets.cs" />
+    <Compile Include="DB\Ticket.cs" />
     <Compile Include="DB\Zona.cs" />
     <Compile Include="CreateEmployee.cs">
       <SubType>Form</SubType>
@@ -131,6 +141,12 @@
     </Compile>
     <Compile Include="Information.Designer.cs">
       <DependentUpon>Information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sell.Designer.cs">
+      <DependentUpon>Sell.cs</DependentUpon>
     </Compile>
     <Compile Include="SignUp.cs">
       <SubType>Form</SubType>
@@ -169,6 +185,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Information.resx">
       <DependentUpon>Information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sell.resx">
+      <DependentUpon>Sell.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>

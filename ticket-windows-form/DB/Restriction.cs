@@ -9,7 +9,7 @@ namespace ticket_windows_form.DB
 {
     internal class Restriction
     {
-        public void OnlyLetters(object sender, KeyPressEventArgs e)
+        public static void OnlyLetters(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && e.KeyChar != ' ')
             {
@@ -17,7 +17,7 @@ namespace ticket_windows_form.DB
             }
         }
 
-        public void OnlyNumbers(object sender, KeyPressEventArgs e)
+        public static void OnlyNumbers(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
             {

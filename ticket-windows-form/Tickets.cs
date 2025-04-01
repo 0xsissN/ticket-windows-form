@@ -87,5 +87,15 @@ namespace ticket_windows_form
             Sell sell = new Sell();
             sell.Show();
         }
+
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

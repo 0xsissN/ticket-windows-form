@@ -50,8 +50,10 @@ namespace ticket_windows_form.DB
                     {
                         cmd.Parameters.AddWithValue("@email", email);
                         cmd.Parameters.AddWithValue("@password", password);
-                        cmd.ExecuteNonQuery();
-                        res = true;
+
+                        int count = Convert.ToInt32(cmd.ExecuteScalar());
+
+                        res = count > 0; 
                     }
                 }
             }

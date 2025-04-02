@@ -117,4 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="bhSFvUcgoqXOKYd4cd7FoN5j8ag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bhSFvUcgoqXOKYd4cd7FoN5j8ag.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="thumbnail_47579083_1892725634159000_7403959268191240192_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\thumbnail_47579083_1892725634159000_7403959268191240192_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bhSFvUcgoqXOKYd4cd7FoN5j8ag1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bhSFvUcgoqXOKYd4cd7FoN5j8ag1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CNCO_-_Tom_Brasil_2019_(49054391767)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CNCO_-_Tom_Brasil_2019_(49054391767).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

@@ -184,10 +184,17 @@ namespace ticket_windows_form
         {
             if (!System.Text.RegularExpressions.Regex.IsMatch(box_phone.Text, @"^\d*$"))
             {
-                MessageBox.Show("Solo se permiten números en el campo Teléfono.", "Entrada no válida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Solo se permiten números en el campo Celular.", "Entrada no válida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 box_phone.Text = new string(box_phone.Text.Where(char.IsDigit).ToArray());
                 box_phone.SelectionStart = box_phone.Text.Length;
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            User user = new User();
+            user.Show();
+            this.Hide();
         }
     }
 }

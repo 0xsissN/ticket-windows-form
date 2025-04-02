@@ -21,12 +21,14 @@ namespace ticket_windows_form
         {
             SignUp sign_up = new SignUp();
             sign_up.Show();
+            this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             SignIn sign_in = new SignIn();
             sign_in.Show();
+            this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)

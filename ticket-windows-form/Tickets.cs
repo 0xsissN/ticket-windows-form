@@ -86,6 +86,7 @@ namespace ticket_windows_form
                 Receipt.GenerateReceipt(last_ticket_id, method);
                 CreateReceipt create_receipt = new CreateReceipt(amount_super_vip, amount_vip, amount_general, method, client_id, last_receipt_id);
                 create_receipt.Show();
+                this.Hide();
             }
             else
             {

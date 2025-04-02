@@ -32,37 +32,42 @@ namespace ticket_windows_form
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // validar textos
-
             try
             {
+                // Verificar si el ID del artista es un número válido
+                if (!int.TryParse(textBox1.Text, out int id_artist))
+                {
+                    MessageBox.Show("Ingrese un ID de artista válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                // Llamar a la función CreateConcert con el ID del artista
                 bool res = Concert.CreateConcert(
-                    box_name.Text,
-                    box_paternal.Text,
-                    box_maternal.Text,
-                    box_stage_name.Text,
-                    box_manager.Text,
-                    DateTime.Parse(box_birthdate.Text),
                     box_location.Text,
-                    int.Parse(box_capacity.Text), 
+                    int.Parse(box_capacity.Text),
                     box_organization.Text,
                     box_concert_name.Text,
                     DateTime.Parse(box_start_date.Text),
-                    DateTime.Parse(box_end_date.Text)
+                    DateTime.Parse(box_end_date.Text),
+                    id_artist  // Pasamos el ID del artista ingresado
                 );
+
                 if (res)
                 {
-                    MessageBox.Show("Concierto agregado con exito", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Concierto agregado con éxito", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.DialogResult = DialogResult.OK;
                     this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Error al agregar el concierto.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al agregar concierto: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Error al agregar concierto: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         private void box_capacity_TextChanged(object sender, EventArgs e)
         {
             if (!int.TryParse(box_capacity.Text.Trim(), out capacity))
@@ -108,11 +113,6 @@ namespace ticket_windows_form
         }
 
         private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
         {
 
         }
@@ -185,6 +185,38 @@ namespace ticket_windows_form
         private void txtFechaNacimiento_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void CreateConcert_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = Artist.GetArtists();
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (int.TryParse(textBox1.Text, out int id_artist))
+            {
+                if (!Artist.ExistsArtistId(id_artist))
+                {
+                    MessageBox.Show("El ID del artista no existe. Ingrese un ID válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    textBox1.Clear(); 
+                }
+            }
         }
     }
 }

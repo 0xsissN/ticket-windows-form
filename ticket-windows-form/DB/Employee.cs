@@ -66,5 +66,29 @@ namespace ticket_windows_form.DB
             }
             return id_employee;
         }
+        public static bool ValidateEmployeeCredential(string email, string password)
+        {
+            bool res = false;
+            try
+            {
+                using (NpgsqlConnection connection = Connection.GetConnection())
+                {
+                    string query = "SELECT COUNT(*) FROM empleado WHERE correo_electronico = @email AND contrasena = @password";
+                    using (NpgsqlCommand cmd = new NpgsqlCommand(query, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@email", email);
+                        cmd.Parameters.AddWithValue("@password", password);
+
+                        int count = Convert.ToInt32(cmd.ExecuteScalar());
+                        res = count > 0;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al iniciar sesión: " + ex.Message);
+            }
+            return res;
+        }
     }
 }

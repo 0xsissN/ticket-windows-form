@@ -21,12 +21,12 @@ namespace ticket_windows_form
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            CreateArtist create_artist = new CreateArtist();
+            create_artist.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //validar campos
             try
             {
                 bool res = Employee.AddEmployee(
@@ -60,6 +60,22 @@ namespace ticket_windows_form
         }
 
         private void box_hiring_date_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void box_charge_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            CreateConcert create_concert = new CreateConcert();
+            create_concert.Show();
+        }
+
+        private void CreateEmployee_Load(object sender, EventArgs e)
         {
 
         }

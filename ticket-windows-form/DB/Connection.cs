@@ -40,6 +40,5 @@ namespace ticket_windows_form.DB
                 connection.Close();
             }
         }
-
     }
 }

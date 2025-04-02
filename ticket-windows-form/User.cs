@@ -28,5 +28,12 @@ namespace ticket_windows_form
             SignIn sign_in = new SignIn();
             sign_in.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Index index = new Index();
+            index.Show();
+            this.Hide();
+        }
     }
 }

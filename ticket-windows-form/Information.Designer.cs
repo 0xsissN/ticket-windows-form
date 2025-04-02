@@ -56,11 +56,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Black;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label1.Font = new System.Drawing.Font("Arial Black", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
             this.label1.Location = new System.Drawing.Point(433, 52);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(431, 29);
+            this.label1.Size = new System.Drawing.Size(606, 45);
             this.label1.TabIndex = 0;
             this.label1.Text = "INFORMACIÓN SOBRE EL EVENTO";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -68,10 +68,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.label2.Location = new System.Drawing.Point(717, 311);
+            this.label2.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(717, 324);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(288, 26);
+            this.label2.Size = new System.Drawing.Size(409, 34);
             this.label2.TabIndex = 1;
             this.label2.Text = "Ubicación: Coliseo Romano ";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -79,10 +79,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.label3.Location = new System.Drawing.Point(778, 411);
+            this.label3.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(778, 429);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(147, 26);
+            this.label3.Size = new System.Drawing.Size(162, 27);
             this.label3.TabIndex = 2;
             this.label3.Text = "Personas +18";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -90,26 +90,26 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.label4.Location = new System.Drawing.Point(764, 362);
+            this.label4.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(764, 375);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(173, 26);
+            this.label4.Size = new System.Drawing.Size(244, 34);
             this.label4.TabIndex = 3;
             this.label4.Text = "Fecha: 3 de abril";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.label5.Location = new System.Drawing.Point(732, 456);
+            this.label5.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(717, 480);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(246, 26);
+            this.label5.Size = new System.Drawing.Size(358, 34);
             this.label5.TabIndex = 4;
             this.label5.Text = "Cuidar sus pertenencias";
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.button1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(45, 35);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";

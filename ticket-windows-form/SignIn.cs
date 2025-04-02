@@ -45,7 +45,7 @@ namespace ticket_windows_form
                 }
                 else
                 {
-                    MessageBox.Show("Error al iniciar sesión. ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Error al iniciar sesión", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex)

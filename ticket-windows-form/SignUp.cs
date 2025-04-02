@@ -177,7 +177,7 @@ namespace ticket_windows_form
 
         private void box_password_TextChanged(object sender, EventArgs e)
         {
-
+            box_password.UseSystemPasswordChar = true;
         }
         
         private void box_phone_TextChanged(object sender, EventArgs e)

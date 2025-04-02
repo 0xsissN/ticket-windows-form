@@ -62,5 +62,10 @@ namespace ticket_windows_form
             retar.Show();
             this.Close();
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

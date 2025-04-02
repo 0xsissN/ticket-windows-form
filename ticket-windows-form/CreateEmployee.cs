@@ -85,5 +85,10 @@ namespace ticket_windows_form
             user.Show();
             this.Close();
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

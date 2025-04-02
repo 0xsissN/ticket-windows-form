@@ -200,5 +200,10 @@ namespace ticket_windows_form
             user.Show();
             this.Hide();
         }
+
+        private void label4_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

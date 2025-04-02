@@ -225,5 +225,15 @@ namespace ticket_windows_form
             xd.Show();
             this.Close();
         }
+
+        private void box_start_date_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void box_end_date_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

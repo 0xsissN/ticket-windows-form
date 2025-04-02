@@ -43,5 +43,17 @@ namespace ticket_windows_form
             index.Show();
             this.Hide();
         }
+
+        private void btn_ticket_Click(object sender, EventArgs e)
+        {
+            Tickets ticket = new Tickets(3);
+            ticket.Show();
+            this.Hide();
+        }
+
+        private void Information_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

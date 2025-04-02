@@ -41,18 +41,22 @@
             // box_email
             // 
             this.box_email.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.box_email.Location = new System.Drawing.Point(593, 246);
+            this.box_email.Location = new System.Drawing.Point(702, 261);
+            this.box_email.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.box_email.Multiline = true;
             this.box_email.Name = "box_email";
-            this.box_email.Size = new System.Drawing.Size(373, 27);
+            this.box_email.Size = new System.Drawing.Size(419, 48);
             this.box_email.TabIndex = 17;
             this.box_email.TextChanged += new System.EventHandler(this.box_email_TextChanged);
             // 
             // box_password
             // 
             this.box_password.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.box_password.Location = new System.Drawing.Point(593, 360);
+            this.box_password.Location = new System.Drawing.Point(702, 401);
+            this.box_password.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.box_password.Multiline = true;
             this.box_password.Name = "box_password";
-            this.box_password.Size = new System.Drawing.Size(373, 27);
+            this.box_password.Size = new System.Drawing.Size(419, 44);
             this.box_password.TabIndex = 18;
             this.box_password.TextChanged += new System.EventHandler(this.box_password_TextChanged);
             // 
@@ -60,31 +64,32 @@
             // 
             this.txtNombre.AutoSize = true;
             this.txtNombre.Font = new System.Drawing.Font("Arial Black", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(244, 244);
+            this.txtNombre.Location = new System.Drawing.Point(309, 267);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(274, 36);
+            this.txtNombre.Size = new System.Drawing.Size(346, 42);
             this.txtNombre.TabIndex = 19;
-            this.txtNombre.Text = "Correo Electrónico";
+            this.txtNombre.Text = "Correo Electrónico :";
             this.txtNombre.Click += new System.EventHandler(this.txtNombre_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Black", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(244, 351);
+            this.label1.Location = new System.Drawing.Point(309, 401);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(173, 36);
+            this.label1.Size = new System.Drawing.Size(226, 42);
             this.label1.TabIndex = 20;
-            this.label1.Text = "Contraseña";
+            this.label1.Text = "Contraseña :";
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button1.Font = new System.Drawing.Font("Arial Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(531, 469);
+            this.button1.Location = new System.Drawing.Point(632, 548);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(160, 67);
+            this.button1.Size = new System.Drawing.Size(180, 84);
             this.button1.TabIndex = 21;
             this.button1.Text = "Iniciar Sesión";
             this.button1.UseVisualStyleBackColor = false;
@@ -95,18 +100,18 @@
             this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.Controls.Add(this.button3);
             this.panel1.Location = new System.Drawing.Point(0, 1);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1319, 88);
+            this.panel1.Size = new System.Drawing.Size(1484, 110);
             this.panel1.TabIndex = 54;
             // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(52, 22);
+            this.button3.Location = new System.Drawing.Point(58, 28);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(113, 49);
+            this.button3.Size = new System.Drawing.Size(127, 61);
             this.button3.TabIndex = 19;
             this.button3.Text = "Volver";
             this.button3.UseVisualStyleBackColor = true;
@@ -114,16 +119,17 @@
             // 
             // SignIn
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1312, 727);
+            this.ClientSize = new System.Drawing.Size(1476, 909);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.box_password);
             this.Controls.Add(this.box_email);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "SignIn";
             this.Text = "SingIn";
             this.Load += new System.EventHandler(this.SingIn_Load);

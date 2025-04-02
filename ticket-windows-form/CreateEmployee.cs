@@ -45,7 +45,6 @@ namespace ticket_windows_form
                 {
                     MessageBox.Show("Empleado agregado con exito", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.DialogResult = DialogResult.OK;
-                    this.Close();
                 }
             }
             catch (Exception ex)
@@ -78,6 +77,13 @@ namespace ticket_windows_form
         private void CreateEmployee_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            User user = new User();
+            user.Show();
+            this.Close();
         }
     }
 }

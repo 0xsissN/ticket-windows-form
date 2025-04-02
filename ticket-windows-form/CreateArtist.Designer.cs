@@ -42,51 +42,61 @@
             this.txtCarnetIdentidad = new System.Windows.Forms.Label();
             this.txtFechaNacimiento = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // box_birthdate
             // 
             this.box_birthdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.box_birthdate.Location = new System.Drawing.Point(418, 203);
+            this.box_birthdate.Location = new System.Drawing.Point(503, 242);
+            this.box_birthdate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.box_birthdate.Multiline = true;
             this.box_birthdate.Name = "box_birthdate";
-            this.box_birthdate.Size = new System.Drawing.Size(298, 27);
+            this.box_birthdate.Size = new System.Drawing.Size(335, 33);
             this.box_birthdate.TabIndex = 48;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Black;
             this.label3.Font = new System.Drawing.Font("Arial Black", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(260, 17);
+            this.label3.ForeColor = System.Drawing.SystemColors.Control;
+            this.label3.Location = new System.Drawing.Point(359, 28);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(332, 48);
+            this.label3.Size = new System.Drawing.Size(392, 56);
             this.label3.TabIndex = 47;
             this.label3.Text = "Registrar Artista";
             // 
             // box_maternal
             // 
             this.box_maternal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.box_maternal.Location = new System.Drawing.Point(418, 340);
+            this.box_maternal.Location = new System.Drawing.Point(503, 413);
+            this.box_maternal.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.box_maternal.Multiline = true;
             this.box_maternal.Name = "box_maternal";
-            this.box_maternal.Size = new System.Drawing.Size(298, 27);
+            this.box_maternal.Size = new System.Drawing.Size(335, 33);
             this.box_maternal.TabIndex = 46;
             // 
             // box_paternal
             // 
             this.box_paternal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.box_paternal.Location = new System.Drawing.Point(418, 270);
+            this.box_paternal.Location = new System.Drawing.Point(503, 326);
+            this.box_paternal.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.box_paternal.Name = "box_paternal";
-            this.box_paternal.Size = new System.Drawing.Size(298, 26);
+            this.box_paternal.Size = new System.Drawing.Size(335, 30);
             this.box_paternal.TabIndex = 45;
             // 
             // box_name
             // 
             this.box_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.box_name.Location = new System.Drawing.Point(418, 137);
+            this.box_name.Location = new System.Drawing.Point(503, 159);
+            this.box_name.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.box_name.Multiline = true;
             this.box_name.Name = "box_name";
-            this.box_name.Size = new System.Drawing.Size(298, 27);
+            this.box_name.Size = new System.Drawing.Size(335, 33);
             this.box_name.TabIndex = 44;
             this.box_name.TextChanged += new System.EventHandler(this.box_name_TextChanged);
             // 
@@ -94,9 +104,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(126, 340);
+            this.label1.Location = new System.Drawing.Point(175, 413);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(212, 28);
+            this.label1.Size = new System.Drawing.Size(256, 33);
             this.label1.TabIndex = 43;
             this.label1.Text = "Apellido Materno :";
             // 
@@ -104,9 +114,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(126, 270);
+            this.label2.Location = new System.Drawing.Point(175, 326);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(207, 28);
+            this.label2.Size = new System.Drawing.Size(250, 33);
             this.label2.TabIndex = 42;
             this.label2.Text = "Apellido Paterno :";
             // 
@@ -114,37 +124,39 @@
             // 
             this.txtNombre.AutoSize = true;
             this.txtNombre.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(126, 137);
+            this.txtNombre.Location = new System.Drawing.Point(175, 159);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(111, 28);
+            this.txtNombre.Size = new System.Drawing.Size(134, 33);
             this.txtNombre.TabIndex = 41;
             this.txtNombre.Text = "Nombre :";
             // 
             // box_manager
             // 
             this.box_manager.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.box_manager.Location = new System.Drawing.Point(418, 478);
+            this.box_manager.Location = new System.Drawing.Point(503, 586);
+            this.box_manager.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.box_manager.Multiline = true;
             this.box_manager.Name = "box_manager";
-            this.box_manager.Size = new System.Drawing.Size(298, 27);
+            this.box_manager.Size = new System.Drawing.Size(335, 33);
             this.box_manager.TabIndex = 40;
             // 
             // box_stage_name
             // 
             this.box_stage_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.box_stage_name.Location = new System.Drawing.Point(418, 410);
+            this.box_stage_name.Location = new System.Drawing.Point(503, 500);
+            this.box_stage_name.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.box_stage_name.Multiline = true;
             this.box_stage_name.Name = "box_stage_name";
-            this.box_stage_name.Size = new System.Drawing.Size(298, 27);
+            this.box_stage_name.Size = new System.Drawing.Size(335, 33);
             this.box_stage_name.TabIndex = 39;
             // 
             // txtContrasena
             // 
             this.txtContrasena.AutoSize = true;
             this.txtContrasena.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContrasena.Location = new System.Drawing.Point(126, 478);
+            this.txtContrasena.Location = new System.Drawing.Point(175, 586);
             this.txtContrasena.Name = "txtContrasena";
-            this.txtContrasena.Size = new System.Drawing.Size(119, 28);
+            this.txtContrasena.Size = new System.Drawing.Size(145, 33);
             this.txtContrasena.TabIndex = 38;
             this.txtContrasena.Text = "Manager :";
             // 
@@ -152,9 +164,9 @@
             // 
             this.txtCarnetIdentidad.AutoSize = true;
             this.txtCarnetIdentidad.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCarnetIdentidad.Location = new System.Drawing.Point(126, 410);
+            this.txtCarnetIdentidad.Location = new System.Drawing.Point(175, 500);
             this.txtCarnetIdentidad.Name = "txtCarnetIdentidad";
-            this.txtCarnetIdentidad.Size = new System.Drawing.Size(214, 28);
+            this.txtCarnetIdentidad.Size = new System.Drawing.Size(258, 33);
             this.txtCarnetIdentidad.TabIndex = 37;
             this.txtCarnetIdentidad.Text = "Nombre Artistico :";
             // 
@@ -162,9 +174,9 @@
             // 
             this.txtFechaNacimiento.AutoSize = true;
             this.txtFechaNacimiento.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFechaNacimiento.Location = new System.Drawing.Point(126, 203);
+            this.txtFechaNacimiento.Location = new System.Drawing.Point(175, 242);
             this.txtFechaNacimiento.Name = "txtFechaNacimiento";
-            this.txtFechaNacimiento.Size = new System.Drawing.Size(251, 28);
+            this.txtFechaNacimiento.Size = new System.Drawing.Size(305, 33);
             this.txtFechaNacimiento.TabIndex = 36;
             this.txtFechaNacimiento.Text = "Fecha de nacimiento :";
             // 
@@ -173,23 +185,56 @@
             this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(312, 547);
+            this.button1.Location = new System.Drawing.Point(384, 672);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(199, 59);
+            this.button1.Size = new System.Drawing.Size(224, 74);
             this.button1.TabIndex = 49;
             this.button1.Text = "Guardar";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Location = new System.Drawing.Point(2, 1);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1484, 110);
+            this.panel1.TabIndex = 80;
+            // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(58, 28);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(127, 61);
+            this.button4.TabIndex = 19;
+            this.button4.Text = "Volver";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label5.Location = new System.Drawing.Point(262, 398);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(0, 36);
+            this.label5.TabIndex = 79;
+            // 
             // CreateArtist
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(858, 626);
+            this.ClientSize = new System.Drawing.Size(1004, 782);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.box_birthdate);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.box_maternal);
             this.Controls.Add(this.box_paternal);
             this.Controls.Add(this.box_name);
@@ -204,6 +249,8 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "CreateArtist";
             this.Text = "CreateArtist";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -225,5 +272,8 @@
         private System.Windows.Forms.Label txtCarnetIdentidad;
         private System.Windows.Forms.Label txtFechaNacimiento;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label5;
     }
 }

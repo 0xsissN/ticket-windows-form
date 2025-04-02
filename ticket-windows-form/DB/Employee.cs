@@ -71,7 +71,7 @@ namespace ticket_windows_form.DB
             bool res = false;
             try
             {
-                using (NpgsqlConnection connection = Connection.GetConnection())
+                NpgsqlConnection connection = Connection.GetConnection();
                 {
                     string query = "SELECT COUNT(*) FROM empleado WHERE correo_electronico = @email AND contrasena = @password";
                     using (NpgsqlCommand cmd = new NpgsqlCommand(query, connection))

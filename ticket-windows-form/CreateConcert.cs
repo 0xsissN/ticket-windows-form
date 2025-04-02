@@ -218,5 +218,12 @@ namespace ticket_windows_form
                 }
             }
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            CreateEmployee xd = new CreateEmployee();
+            xd.Show();
+            this.Close();
+        }
     }
 }

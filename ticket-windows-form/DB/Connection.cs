@@ -12,7 +12,7 @@ namespace ticket_windows_form.DB
         static String server = "localhost";
         static String bd = "BOLETERIA";
         static String user = "postgres";
-        static String password = "ligadenico0";
+        static String password = "1234";
         static String port = "5432";
 
         private static string conn = "server=" + server + ";" + "port=" + port + ";" + "user id=" + user + ";" + "password=" + password + ";" + "database=" + bd + ";";

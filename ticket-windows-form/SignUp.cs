@@ -164,9 +164,13 @@ namespace ticket_windows_form
                 bool res = Client.InsertClient(box_name.Text, box_paternal.Text, box_maternal.Text, DateTime.Parse(box_date.Text), box_email.Text, box_phone.Text, box_password.Text);
                 if (res) 
                 {
+
                     MessageBox.Show("Cliente agregado con exito", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.DialogResult = DialogResult.OK;
+                    User user = new User();
+                    user.Show();
                     this.Close();
+
                 }
             }
             catch(Exception ex)

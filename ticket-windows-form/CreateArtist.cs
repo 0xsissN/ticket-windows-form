@@ -55,5 +55,12 @@ namespace ticket_windows_form
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            CreateEmployee retar = new CreateEmployee();
+            retar.Show();
+            this.Close();
+        }
     }
 }

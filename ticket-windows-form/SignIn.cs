@@ -39,22 +39,32 @@ namespace ticket_windows_form
             try
             {
                 bool res = Client.ValidateCredential(box_email.Text, box_password.Text);
+                bool res2 = Employee.ValidateEmployeeCredential(box_email.Text, box_password.Text);
                 if (res) 
                 {
                     MessageBox.Show("Inicio de sesión exitoso", "Bienvenido", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    CreateEmployee create_employee = new CreateEmployee();
-                    create_employee.Show();
+                    Index index = new Index();
+                    index.Show();
+                    this.Hide();
+                }
+                else if (res2)
+                {
+                    MessageBox.Show("Inicio de sesión exitoso", "Bienvenido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    CreateEmployee employee = new CreateEmployee();
+                    employee.Show();
                     this.Hide();
                 }
                 else
                 {
                     MessageBox.Show("Error al iniciar sesión", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error al iniciar sesión: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
         }
 
         private void box_password_TextChanged(object sender, EventArgs e)

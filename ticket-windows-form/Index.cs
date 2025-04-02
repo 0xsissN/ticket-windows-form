@@ -34,7 +34,9 @@ namespace ticket_windows_form
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
+            Tickets tickets = new Tickets(3);
+            tickets.Show();
+            this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -51,7 +53,7 @@ namespace ticket_windows_form
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Tickets tickets = new Tickets();
+            Tickets tickets = new Tickets(1);
             tickets.Show();
             this.Hide();
         }
@@ -72,6 +74,20 @@ namespace ticket_windows_form
         {
             CreateEmployee create_employee = new CreateEmployee();
             create_employee.Show();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Tickets tickets = new Tickets(2);
+            tickets.Show();
+            this.Hide();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Tickets tickets = new Tickets(1);
+            tickets.Show();
+            this.Hide();
         }
     }
 }

@@ -13,9 +13,21 @@ namespace ticket_windows_form
 {
     public partial class Tickets : Form
     {
-        public Tickets()
+        public Tickets(int id)
         {
             InitializeComponent();
+
+            Ticket ticket = new Ticket();
+            string concert_name = ticket.ObtenerNombreConcierto(id);
+
+            if (!string.IsNullOrEmpty(concert_name))
+            {
+                textBox1.Text = concert_name.Trim();
+            }
+            else
+            {
+                textBox1.Text = "Concierto no encontrado";
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -84,8 +96,8 @@ namespace ticket_windows_form
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Tickets tickets = new Tickets();
-            tickets.Show();
+            Index index = new Index();
+            index.Show();
             this.Hide();
         }
 
@@ -101,18 +113,7 @@ namespace ticket_windows_form
 
         private void Tickets_Load(object sender, EventArgs e)
         {
-            int conciertoId = 1;
-            Ticket ticket = new Ticket();
-            string nombreConcierto = ticket.ObtenerNombreConcierto(conciertoId);
-
-            if (!string.IsNullOrEmpty(nombreConcierto))
-            {
-                textBox1.Text = nombreConcierto.Trim();
-            }
-            else
-            {
-                textBox1.Text = "Concierto no encontrado";
-            }
+            
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

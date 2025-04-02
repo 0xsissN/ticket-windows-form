@@ -56,13 +56,12 @@ namespace ticket_windows_form.DB
         public string ObtenerNombreConcierto(int conciertoId)
         {
             string ubicacionConcierto = string.Empty;
-            string query = "SELECT ubicacion_concierto FROM CONCIERTO WHERE id_concierto = @conciertoId";
-
+            
             try
             {
-                using (NpgsqlConnection connection = Connection.GetConnection())
+                NpgsqlConnection connection = Connection.GetConnection();
                 {
-                    connection.Open();
+                    string query = "SELECT nombre_concierto FROM CONCIERTO WHERE id_concierto = @conciertoId";
                     using (NpgsqlCommand cmd = new NpgsqlCommand(query, connection))
                     {
                         cmd.Parameters.AddWithValue("@conciertoId", conciertoId);

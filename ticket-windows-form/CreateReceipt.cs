@@ -52,7 +52,7 @@ namespace ticket_windows_form
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Tickets tickets = new Tickets();
+            Tickets tickets = new Tickets(1);
             tickets.Show();
             this.Hide();
         }
@@ -129,6 +129,9 @@ namespace ticket_windows_form
             box_date.Text = fechaActual;
         }
 
+        private void box_details_TextChanged(object sender, EventArgs e)
+        {
 
+        }
     }
 }

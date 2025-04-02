@@ -17,6 +17,11 @@ namespace ticket_windows_form
         public CreateArtist()
         {
             InitializeComponent();
+            box_manager.KeyPress += new KeyPressEventHandler(Restriction.OnlyLetters);
+            box_maternal.KeyPress += new KeyPressEventHandler(Restriction.OnlyLetters);
+            box_paternal.KeyPress += new KeyPressEventHandler(Restriction.OnlyLetters);
+            box_name.KeyPress += new KeyPressEventHandler(Restriction.OnlyLetters);
+            box_maternal.KeyPress += new KeyPressEventHandler(Restriction.OnlyLetters);
         }
 
         private void button1_Click(object sender, EventArgs e)

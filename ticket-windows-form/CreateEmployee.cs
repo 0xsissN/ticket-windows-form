@@ -13,10 +13,17 @@ namespace ticket_windows_form
 {
     public partial class CreateEmployee : Form
     {
-        private Restriction restriction = new Restriction();
         public CreateEmployee()
         {
             InitializeComponent();
+            box_maternal.KeyPress += new KeyPressEventHandler(Restriction.OnlyLetters);
+            box_paternal.KeyPress += new KeyPressEventHandler(Restriction.OnlyLetters);
+            box_name.KeyPress += new KeyPressEventHandler(Restriction.OnlyLetters);
+            box_phone.KeyPress += new KeyPressEventHandler(Restriction.OnlyNumbers);
+            box_salary.KeyPress += new KeyPressEventHandler(Restriction.OnlyNumbers);
+            box_charge.KeyPress += new KeyPressEventHandler(Restriction.OnlyLetters);
+            box_email.KeyPress += new KeyPressEventHandler(Restriction.OnlyLetters);
+            box_password.KeyPress += new KeyPressEventHandler(Restriction.OnlyLetters);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -87,6 +94,11 @@ namespace ticket_windows_form
         }
 
         private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void box_hiring_date_ValueChanged(object sender, EventArgs e)
         {
 
         }

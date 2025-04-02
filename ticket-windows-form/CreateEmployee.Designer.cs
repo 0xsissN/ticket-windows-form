@@ -164,9 +164,9 @@
             this.label10.Location = new System.Drawing.Point(503, 332);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(107, 23);
+            this.label10.Size = new System.Drawing.Size(117, 23);
             this.label10.TabIndex = 63;
-            this.label10.Text = "Password :";
+            this.label10.Text = "Contraseña:";
             // 
             // label4
             // 
@@ -345,6 +345,7 @@
             this.box_hiring_date.Name = "box_hiring_date";
             this.box_hiring_date.Size = new System.Drawing.Size(224, 26);
             this.box_hiring_date.TabIndex = 79;
+            this.box_hiring_date.ValueChanged += new System.EventHandler(this.box_hiring_date_ValueChanged);
             // 
             // box_birthdate
             // 

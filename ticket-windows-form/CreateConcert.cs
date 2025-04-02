@@ -14,10 +14,14 @@ namespace ticket_windows_form
     public partial class CreateConcert : Form
     {
         private int capacity;
-        private Restriction restriction = new Restriction();
         public CreateConcert()
         {
             InitializeComponent();
+            box_concert_name.KeyPress += new KeyPressEventHandler(Restriction.OnlyLetters);
+            box_capacity.KeyPress += new KeyPressEventHandler(Restriction.OnlyNumbers);
+            box_organization.KeyPress += new KeyPressEventHandler(Restriction.OnlyLetters);
+            box_location.KeyPress += new KeyPressEventHandler(Restriction.OnlyLetters);
+            textBox1.KeyPress += new KeyPressEventHandler(Restriction.OnlyLetters);
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -34,14 +38,12 @@ namespace ticket_windows_form
         {
             try
             {
-                // Verificar si el ID del artista es un número válido
                 if (!int.TryParse(textBox1.Text, out int id_artist))
                 {
                     MessageBox.Show("Ingrese un ID de artista válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
-                // Llamar a la función CreateConcert con el ID del artista
                 bool res = Concert.CreateConcert(
                     box_location.Text,
                     int.Parse(box_capacity.Text),
@@ -49,7 +51,7 @@ namespace ticket_windows_form
                     box_concert_name.Text,
                     DateTime.Parse(box_start_date.Text),
                     DateTime.Parse(box_end_date.Text),
-                    id_artist  // Pasamos el ID del artista ingresado
+                    id_artist  
                 );
 
                 if (res)

@@ -240,6 +240,7 @@
             // 
             // box_nro_receipt
             // 
+            this.box_nro_receipt.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.box_nro_receipt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.box_nro_receipt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.box_nro_receipt.Location = new System.Drawing.Point(1016, 149);
@@ -258,7 +259,7 @@
             // 
             // box_date
             // 
-            this.box_date.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.box_date.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.box_date.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.box_date.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.box_date.Location = new System.Drawing.Point(508, 146);
@@ -271,6 +272,7 @@
             // 
             // box_method
             // 
+            this.box_method.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.box_method.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.box_method.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.box_method.Location = new System.Drawing.Point(508, 293);
@@ -283,6 +285,7 @@
             // 
             // box_cod_client
             // 
+            this.box_cod_client.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.box_cod_client.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.box_cod_client.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.box_cod_client.Location = new System.Drawing.Point(1016, 218);
@@ -308,6 +311,7 @@
             // 
             // box_amount_super_vip
             // 
+            this.box_amount_super_vip.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.box_amount_super_vip.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.box_amount_super_vip.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.box_amount_super_vip.Location = new System.Drawing.Point(360, 455);
@@ -320,6 +324,7 @@
             // 
             // box_amount_vip
             // 
+            this.box_amount_vip.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.box_amount_vip.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.box_amount_vip.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.box_amount_vip.Location = new System.Drawing.Point(360, 516);
@@ -332,6 +337,7 @@
             // 
             // box_amount_general
             // 
+            this.box_amount_general.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.box_amount_general.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.box_amount_general.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.box_amount_general.Location = new System.Drawing.Point(360, 574);
@@ -344,6 +350,7 @@
             // 
             // box_total_super_vip
             // 
+            this.box_total_super_vip.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.box_total_super_vip.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.box_total_super_vip.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.box_total_super_vip.Location = new System.Drawing.Point(988, 455);
@@ -356,6 +363,7 @@
             // 
             // box_total_vip
             // 
+            this.box_total_vip.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.box_total_vip.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.box_total_vip.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.box_total_vip.Location = new System.Drawing.Point(987, 511);
@@ -368,6 +376,7 @@
             // 
             // box_total_general
             // 
+            this.box_total_general.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.box_total_general.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.box_total_general.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.box_total_general.Location = new System.Drawing.Point(987, 569);
@@ -380,6 +389,7 @@
             // 
             // box_total
             // 
+            this.box_total.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.box_total.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.box_total.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.box_total.Location = new System.Drawing.Point(987, 635);
@@ -395,7 +405,7 @@
             this.txtFechaNacimiento.AutoSize = true;
             this.txtFechaNacimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFechaNacimiento.ForeColor = System.Drawing.Color.White;
-            this.txtFechaNacimiento.Location = new System.Drawing.Point(558, 33);
+            this.txtFechaNacimiento.Location = new System.Drawing.Point(557, 43);
             this.txtFechaNacimiento.Name = "txtFechaNacimiento";
             this.txtFechaNacimiento.Size = new System.Drawing.Size(124, 39);
             this.txtFechaNacimiento.TabIndex = 20;
@@ -417,8 +427,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(1312, 727);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(1049, 581);
             this.Controls.Add(this.box_total);
             this.Controls.Add(this.box_total_general);
             this.Controls.Add(this.box_total_vip);

@@ -36,5 +36,12 @@ namespace ticket_windows_form
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Index index = new Index();
+            index.Show();
+            this.Hide();
+        }
     }
 }

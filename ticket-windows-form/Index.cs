@@ -62,6 +62,7 @@ namespace ticket_windows_form
         {
             User user = new User();
             user.Show();
+            //this.Hide();
         }
 
         private void button2_Click_1(object sender, EventArgs e)

@@ -223,6 +223,7 @@
     <Content Include="Properties\artista_1.jpg" />
     <Content Include="Properties\artista_2.jpg" />
     <Content Include="Properties\artista_3.jpg" />
+    <Content Include="Properties\coliseo.png" />
     <Content Include="script-db.sql" />
   </ItemGroup>
   <ItemGroup />

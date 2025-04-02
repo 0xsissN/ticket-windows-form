@@ -67,7 +67,7 @@
             // 
             this.txtFechaNacimiento.AutoSize = true;
             this.txtFechaNacimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.txtFechaNacimiento.Location = new System.Drawing.Point(167, 187);
+            this.txtFechaNacimiento.Location = new System.Drawing.Point(165, 187);
             this.txtFechaNacimiento.Name = "txtFechaNacimiento";
             this.txtFechaNacimiento.Size = new System.Drawing.Size(173, 29);
             this.txtFechaNacimiento.TabIndex = 19;
@@ -87,7 +87,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label2.Location = new System.Drawing.Point(895, 187);
+            this.label2.Location = new System.Drawing.Point(915, 187);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(114, 29);
             this.label2.TabIndex = 21;
@@ -97,7 +97,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label3.Location = new System.Drawing.Point(167, 284);
+            this.label3.Location = new System.Drawing.Point(165, 279);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(124, 29);
             this.label3.TabIndex = 22;
@@ -107,7 +107,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label4.Location = new System.Drawing.Point(167, 374);
+            this.label4.Location = new System.Drawing.Point(165, 374);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(50, 29);
             this.label4.TabIndex = 23;
@@ -117,7 +117,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label5.Location = new System.Drawing.Point(167, 467);
+            this.label5.Location = new System.Drawing.Point(165, 467);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(102, 29);
             this.label5.TabIndex = 24;
@@ -157,7 +157,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label9.Location = new System.Drawing.Point(167, 544);
+            this.label9.Location = new System.Drawing.Point(165, 559);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(330, 29);
             this.label9.TabIndex = 28;
@@ -168,7 +168,7 @@
             this.button2.BackColor = System.Drawing.Color.Gold;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.Location = new System.Drawing.Point(889, 531);
+            this.button2.Location = new System.Drawing.Point(890, 540);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(172, 58);
@@ -240,7 +240,7 @@
             "Qr",
             "Paypal",
             "Tarjeta"});
-            this.combo_method.Location = new System.Drawing.Point(552, 540);
+            this.combo_method.Location = new System.Drawing.Point(550, 555);
             this.combo_method.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.combo_method.Name = "combo_method";
             this.combo_method.Size = new System.Drawing.Size(145, 33);
@@ -252,7 +252,7 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox1.Location = new System.Drawing.Point(300, 25);
+            this.textBox1.Location = new System.Drawing.Point(409, 25);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
@@ -284,7 +284,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1313, 727);
             this.Controls.Add(this.combo_method);
             this.Controls.Add(this.combo_general);

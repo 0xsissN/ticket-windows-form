@@ -55,5 +55,15 @@ namespace ticket_windows_form
                 MessageBox.Show("No se encontraron registros en la tabla persona.");
             }
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void Sell_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

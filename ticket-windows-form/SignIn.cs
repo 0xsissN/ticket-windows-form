@@ -48,6 +48,19 @@ namespace ticket_windows_form
             {
                 MessageBox.Show("Error al iniciar sesión: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+            string email = box_email.Text;
+            string password = box_password.Text;
+            bool res2 = Employee.ValidateEmployeeCredential(email, password); 
+
+            if (res2)
+            {
+                MessageBox.Show("Inicio de sesión exitoso", "Bienvenido Gerente", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    this.Hide();
+                    CreateEmployee create_employee = new CreateEmployee();
+                    create_employee.Show();
+            }
         }
 
         private void box_password_TextChanged(object sender, EventArgs e)

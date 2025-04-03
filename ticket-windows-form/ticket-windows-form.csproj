@@ -161,6 +161,12 @@
     <Compile Include="EOption.Designer.cs">
       <DependentUpon>EOption.cs</DependentUpon>
     </Compile>
+    <Compile Include="EUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EUser.Designer.cs">
+      <DependentUpon>EUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Index.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -222,6 +228,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EOption.resx">
       <DependentUpon>EOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EUser.resx">
+      <DependentUpon>EUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Index.resx">
       <DependentUpon>Index.cs</DependentUpon>

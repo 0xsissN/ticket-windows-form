@@ -117,7 +117,6 @@ namespace ticket_windows_form.DB
             }
             catch (Exception ex)
             {
-                // Manejo de excepciones
                 MessageBox.Show("Error al editar el artista: " + ex.Message);
                 return false;
             }

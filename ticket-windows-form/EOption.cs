@@ -68,5 +68,12 @@ namespace ticket_windows_form
             employee.Show();
             this.Hide();
         }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            EUser user = new EUser();
+            user.Show();
+            this.Hide();
+        }
     }
 }

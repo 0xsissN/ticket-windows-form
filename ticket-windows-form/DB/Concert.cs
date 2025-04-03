@@ -56,6 +56,170 @@ namespace ticket_windows_form.DB
 
             return res;
         }
+
+        public string GetConcertName(int conciertoId)
+        {
+            string concert_name = string.Empty;
+
+            try
+            {
+                NpgsqlConnection connection = Connection.GetConnection();
+                {
+                    string query = "SELECT nombre_concierto FROM CONCIERTO WHERE id_concierto = @conciertoId";
+                    using (NpgsqlCommand cmd = new NpgsqlCommand(query, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@conciertoId", conciertoId);
+                        var result = cmd.ExecuteScalar();
+
+                        if (result != null)
+                        {
+                            concert_name = result.ToString();
+                        }
+                        else
+                        {
+                            MessageBox.Show("No se encontró el concierto con el ID proporcionado.");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al obtener el nombre del concierto: " + ex.Message);
+            }
+
+            return concert_name;
+        }
+
+        public string GetLocationConcert(int conciertoId)
+        {
+            string concert_location = string.Empty;
+
+            try
+            {
+                NpgsqlConnection connection = Connection.GetConnection();
+                {
+                    string query = "SELECT ubicacion_concierto FROM CONCIERTO WHERE id_concierto = @conciertoId";
+                    using (NpgsqlCommand cmd = new NpgsqlCommand(query, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@conciertoId", conciertoId);
+                        var result = cmd.ExecuteScalar();
+
+                        if (result != null)
+                        {
+                            concert_location = result.ToString();
+                        }
+                        else
+                        {
+                            MessageBox.Show("No se encontró el concierto con el ID proporcionado.");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al obtener el nombre del concierto: " + ex.Message);
+            }
+
+            return concert_location;
+        }
+
+        public string GetStartDateConcert(int conciertoId)
+        {
+            string concert_start_date = string.Empty;
+
+            try
+            {
+                NpgsqlConnection connection = Connection.GetConnection();
+                {
+                    string query = "SELECT fecha_inicio FROM CONCIERTO WHERE id_concierto = @conciertoId";
+                    using (NpgsqlCommand cmd = new NpgsqlCommand(query, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@conciertoId", conciertoId);
+                        var result = cmd.ExecuteScalar();
+
+                        if (result != null)
+                        {
+                            concert_start_date = result.ToString();
+                        }
+                        else
+                        {
+                            MessageBox.Show("No se encontró el concierto con el ID proporcionado.");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al obtener el nombre del concierto: " + ex.Message);
+            }
+
+            return concert_start_date;
+        }
+        public string GetEndDateConcert(int conciertoId)
+        {
+            string concert_end_date = string.Empty;
+
+            try
+            {
+                NpgsqlConnection connection = Connection.GetConnection();
+                {
+                    string query = "SELECT fecha_fin FROM CONCIERTO WHERE id_concierto = @conciertoId";
+                    using (NpgsqlCommand cmd = new NpgsqlCommand(query, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@conciertoId", conciertoId);
+                        var result = cmd.ExecuteScalar();
+
+                        if (result != null)
+                        {
+                            concert_end_date = result.ToString();
+                        }
+                        else
+                        {
+                            MessageBox.Show("No se encontró el concierto con el ID proporcionado.");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al obtener el nombre del concierto: " + ex.Message);
+            }
+
+            return concert_end_date;
+        }
+
+        public string GetArtistConcert(int conciertoId)
+        {
+            string concert_artist = string.Empty;
+
+            try
+            {
+                NpgsqlConnection connection = Connection.GetConnection();
+                {
+                    string query = "SELECT a.nom_artistico FROM CONCIERTO c JOIN ARTISTA a ON c.artista_id = a.id_artista WHERE c.id_concierto = @conciertoId";
+                    using (NpgsqlCommand cmd = new NpgsqlCommand(query, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@conciertoId", conciertoId);
+                        var result = cmd.ExecuteScalar();
+
+                        if (result != null)
+                        {
+                            concert_artist = result.ToString();
+                        }
+                        else
+                        {
+                            MessageBox.Show("No se encontró el concierto con el ID proporcionado.");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al obtener el nombre del concierto: " + ex.Message);
+            }
+
+            return concert_artist;
+        }
     }
 }
 

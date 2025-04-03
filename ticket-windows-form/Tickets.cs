@@ -17,8 +17,8 @@ namespace ticket_windows_form
         {
             InitializeComponent();
 
-            Ticket ticket = new Ticket();
-            string concert_name = ticket.ObtenerNombreConcierto(id);
+            Concert concert = new Concert();
+            string concert_name = concert.GetConcertName(id);
 
             if (!string.IsNullOrEmpty(concert_name))
             {

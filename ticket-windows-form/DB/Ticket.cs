@@ -53,37 +53,5 @@ namespace ticket_windows_form.DB
 
             return dt;
         }
-        public string ObtenerNombreConcierto(int conciertoId)
-        {
-            string ubicacionConcierto = string.Empty;
-            
-            try
-            {
-                NpgsqlConnection connection = Connection.GetConnection();
-                {
-                    string query = "SELECT nombre_concierto FROM CONCIERTO WHERE id_concierto = @conciertoId";
-                    using (NpgsqlCommand cmd = new NpgsqlCommand(query, connection))
-                    {
-                        cmd.Parameters.AddWithValue("@conciertoId", conciertoId);
-                        var result = cmd.ExecuteScalar();
-
-                        if (result != null)
-                        {
-                            ubicacionConcierto = result.ToString();
-                        }
-                        else
-                        {
-                            MessageBox.Show("No se encontró el concierto con el ID proporcionado.");
-                        }
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error al obtener el nombre del concierto: " + ex.Message);
-            }
-
-            return ubicacionConcierto;
-        }
     }
 }

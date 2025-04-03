@@ -34,14 +34,14 @@ namespace ticket_windows_form
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Information tickets = new Information();
+            Information tickets = new Information(3);
             tickets.Show();
             this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Information information = new Information();
+            Information information = new Information(1);
             information.Show();
             this.Hide();
         }
@@ -74,15 +74,15 @@ namespace ticket_windows_form
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            InformationC tickets = new InformationC();
-            tickets.Show();
+            Information information = new Information(2);
+            information.Show();
             this.Hide();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            InformacionB tickets = new InformacionB();
-            tickets.Show();
+            Information information = new Information(1);
+            information.Show();
             this.Hide();
         }
     }

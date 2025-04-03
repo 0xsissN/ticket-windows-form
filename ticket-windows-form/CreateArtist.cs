@@ -22,6 +22,7 @@ namespace ticket_windows_form
             box_paternal.KeyPress += new KeyPressEventHandler(Restriction.OnlyLetters);
             box_name.KeyPress += new KeyPressEventHandler(Restriction.OnlyLetters);
             box_maternal.KeyPress += new KeyPressEventHandler(Restriction.OnlyLetters);
+            box_stage_name.KeyPress += new KeyPressEventHandler(Restriction.OnlyLetters);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -43,7 +44,6 @@ namespace ticket_windows_form
                 {
                     MessageBox.Show("Artista agregado con éxito", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.DialogResult = DialogResult.OK;
-                    this.Close();
                 }
                 else
                 {
@@ -63,12 +63,24 @@ namespace ticket_windows_form
 
         private void button4_Click(object sender, EventArgs e)
         {
-            CreateEmployee retar = new CreateEmployee();
-            retar.Show();
+            EOption option = new EOption();
+            option.Show();
             this.Close();
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            EArtist eartist = new EArtist();
+            eartist.Show();
+            this.Close();
+        }
+
+        private void box_stage_name_TextChanged(object sender, EventArgs e)
         {
 
         }

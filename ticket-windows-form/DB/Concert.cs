@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -220,6 +221,75 @@ namespace ticket_windows_form.DB
 
             return concert_artist;
         }
+
+        public static bool Edit_Concert(
+    int idConcert, string location, int capacity, string organization,
+    string concertName, DateTime startDate, DateTime endDate)
+        {
+            try
+            {
+
+                NpgsqlConnection connection = Connection.GetConnection();
+                if (connection == null || connection.State != System.Data.ConnectionState.Open)
+                {
+                    MessageBox.Show("No se pudo establecer conexión con la base de datos.");
+                    return false;
+                }
+
+                string query = @"UPDATE concierto 
+                         SET ubicacion_concierto = @location, 
+                             capacidad_total = @capacity, organizacion = @organization, 
+                             nombre_concierto = @concertName, fecha_inicio = @startDate, fecha_fin = @endDate 
+                         WHERE id_concierto = @idConcert";
+
+                using (NpgsqlCommand cmd = new NpgsqlCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@idConcert", idConcert);
+                    cmd.Parameters.AddWithValue("@location", location);
+                    cmd.Parameters.AddWithValue("@capacity", capacity);
+                    cmd.Parameters.AddWithValue("@organization", organization);
+                    cmd.Parameters.AddWithValue("@concertName", concertName);
+                    cmd.Parameters.AddWithValue("@startDate", startDate);
+                    cmd.Parameters.AddWithValue("@endDate", endDate);
+
+                    int rowsAffected = cmd.ExecuteNonQuery();
+                    return rowsAffected > 0;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al editar el concierto: " + ex.Message);
+                return false;
+            }
+        }
+
+        public static DataTable GetConcerts()
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                NpgsqlConnection connection = Connection.GetConnection();
+                string query = @"SELECT id_concierto, artista_id, empleado_id, zona_id, 
+                                ubicacion_concierto, capacidad_total, organizacion, 
+                                nombre_concierto, fecha_inicio, fecha_fin 
+                         FROM concierto
+                         ORDER BY id_concierto ASC";
+
+                using (NpgsqlCommand cmd = new NpgsqlCommand(query, connection))
+                {
+                    using (NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd))
+                    {
+                        da.Fill(dt);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al obtener la lista de conciertos: " + ex.Message);
+            }
+            return dt;
+        }
+
     }
 }
 

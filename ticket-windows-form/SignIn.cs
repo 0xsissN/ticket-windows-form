@@ -50,8 +50,8 @@ namespace ticket_windows_form
                 else if (res2)
                 {
                     MessageBox.Show("Inicio de sesión exitoso", "Bienvenido", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    CreateEmployee employee = new CreateEmployee();
-                    employee.Show();
+                    EOption option = new EOption();
+                    option.Show();
                     this.Hide();
                 }
                 else

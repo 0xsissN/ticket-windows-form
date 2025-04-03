@@ -83,7 +83,75 @@ namespace ticket_windows_form.DB
 
             return dt;
         }
+        public bool Edit_Artist(
+    int idArtist, string name, string paternal, string maternal,
+    string stageName, string manager, DateTime birthdate)
+        {
+            try
+            {
+                NpgsqlConnection connection = Connection.GetConnection();
+                if (connection == null || connection.State != System.Data.ConnectionState.Open)
+                {
+                    MessageBox.Show("No se pudo establecer conexión con la base de datos.");
+                    return false;
+                }
+                string query = @"
+            UPDATE artista 
+            SET nombre = @name, ap_paterno = @paternal, ap_materno = @maternal, 
+                nom_artistico = @stageName, manager = @manager, fecha_nacimiento = @birthdate 
+            WHERE id_artista = @idArtist";
 
+                using (NpgsqlCommand cmd = new NpgsqlCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@idArtist", idArtist);
+                    cmd.Parameters.AddWithValue("@name", name);
+                    cmd.Parameters.AddWithValue("@paternal", paternal);
+                    cmd.Parameters.AddWithValue("@maternal", maternal);
+                    cmd.Parameters.AddWithValue("@stageName", stageName);
+                    cmd.Parameters.AddWithValue("@manager", manager);
+                    cmd.Parameters.AddWithValue("@birthdate", birthdate);
+
+                    int rowsAffected = cmd.ExecuteNonQuery();
+                    return rowsAffected > 0;
+                }
+            }
+            catch (Exception ex)
+            {
+                // Manejo de excepciones
+                MessageBox.Show("Error al editar el artista: " + ex.Message);
+                return false;
+            }
+        }
+        public static DataTable SaveArtists(int? editedArtistId = null)
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                NpgsqlConnection connection = Connection.GetConnection();
+                {
+                    string query = @"
+                SELECT id_artista, nombre, ap_paterno, ap_materno, nom_artistico, manager, fecha_nacimiento 
+                FROM artista
+                ORDER BY id_artista ASC";
+
+                    using (NpgsqlCommand cmd = new NpgsqlCommand(query, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@editedArtistId", (object)editedArtistId ?? DBNull.Value);
+
+                        using (NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd))
+                        {
+                            da.Fill(dt);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al obtener la lista de artistas: " + ex.Message);
+            }
+
+            return dt;
+        }
     }
 
 }

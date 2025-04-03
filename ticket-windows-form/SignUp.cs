@@ -16,6 +16,11 @@ namespace ticket_windows_form
         public SignUp()
         {
             InitializeComponent();
+            box_ci.KeyPress += new KeyPressEventHandler(Restriction.OnlyNumbers);
+            box_phone.KeyPress += new KeyPressEventHandler(Restriction.OnlyNumbers);
+            box_name.KeyPress += new KeyPressEventHandler(Restriction.OnlyLetters);
+            box_paternal.KeyPress += new KeyPressEventHandler(Restriction.OnlyLetters);
+            box_maternal.KeyPress += new KeyPressEventHandler(Restriction.OnlyLetters);
         }
 
         private void txtFechaNacimiento_Click(object sender, EventArgs e)
@@ -40,30 +45,12 @@ namespace ticket_windows_form
 
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
-            if (!System.Text.RegularExpressions.Regex.IsMatch(box_paternal.Text, @"^[A-Za-zÁÉÍÓÚáéíóúÑñ]+( [A-Za-zÁÉÍÓÚáéíóúÑñ]+)*$"))
-            {
-                MessageBox.Show("Solo se permiten letras en el campo Apellido Paterno.", "Entrada no válida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                box_paternal.Text = System.Text.RegularExpressions.Regex.Replace(box_paternal.Text, @"[^A-Za-zÁÉÍÓÚáéíóúÑñ\s]", "");
-                box_paternal.Text = box_paternal.Text.Trim();
-                box_paternal.Text = System.Text.RegularExpressions.Regex.Replace(box_paternal.Text, @"\s+", " ");
-                box_paternal.Text = System.Threading.Thread.CurrentThread.CurrentCulture.TextInfo.ToTitleCase(box_paternal.Text.ToLower());
-            }
-
-            box_paternal.SelectionStart = box_paternal.Text.Length;
+            
         }
 
         private void textBox6_TextChanged(object sender, EventArgs e)
         {
-            if (!System.Text.RegularExpressions.Regex.IsMatch(box_name.Text, @"^[A-Za-zÁÉÍÓÚáéíóúÑñ]+( [A-Za-zÁÉÍÓÚáéíóúÑñ]+)*$"))
-            {
-                MessageBox.Show("Solo se permiten letras en el campo Nombre. No uses números ni caracteres especiales.", "Entrada no válida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                box_name.Text = System.Text.RegularExpressions.Regex.Replace(box_name.Text, @"[^A-Za-zÁÉÍÓÚáéíóúÑñ\s]", "");
-                box_name.Text = box_name.Text.Trim();
-                box_name.Text = System.Text.RegularExpressions.Regex.Replace(box_name.Text, @"\s+", " ");
-                box_name.Text = System.Threading.Thread.CurrentThread.CurrentCulture.TextInfo.ToTitleCase(box_name.Text.ToLower());
-            }
-
-            box_name.SelectionStart = box_name.Text.Length;
+            
         }
 
         private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
@@ -88,16 +75,7 @@ namespace ticket_windows_form
 
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
-            if (!System.Text.RegularExpressions.Regex.IsMatch(box_maternal.Text, @"^[A-Za-zÁÉÍÓÚáéíóúÑñ]+( [A-Za-zÁÉÍÓÚáéíóúÑñ]+)*$"))
-            {
-                MessageBox.Show("Solo se permiten letras en el campo Apellido Materno.", "Entrada no válida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                box_maternal.Text = System.Text.RegularExpressions.Regex.Replace(box_maternal.Text, @"[^A-Za-zÁÉÍÓÚáéíóúÑñ\s]", "");
-                box_maternal.Text = box_maternal.Text.Trim();
-                box_maternal.Text = System.Text.RegularExpressions.Regex.Replace(box_maternal.Text, @"\s+", " ");
-                box_maternal.Text = System.Threading.Thread.CurrentThread.CurrentCulture.TextInfo.ToTitleCase(box_maternal.Text.ToLower());
-            }
-
-            box_maternal.SelectionStart = box_maternal.Text.Length;
+            
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
@@ -107,12 +85,7 @@ namespace ticket_windows_form
 
         private void box_ci_TextChanged(object sender, EventArgs e)
         {
-            if (!System.Text.RegularExpressions.Regex.IsMatch(box_ci.Text, @"^\d*$"))
-            {
-                MessageBox.Show("Solo se permiten números en el campo Carnet de Identidad.", "Entrada no válida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                box_ci.Text = new string(box_ci.Text.Where(char.IsDigit).ToArray());
-                box_ci.SelectionStart = box_ci.Text.Length;
-            }
+            
         }
 
         private void box_date_ValueChanged(object sender, EventArgs e)
@@ -181,17 +154,12 @@ namespace ticket_windows_form
 
         private void box_password_TextChanged(object sender, EventArgs e)
         {
-            box_password.UseSystemPasswordChar = true;
+            
         }
         
         private void box_phone_TextChanged(object sender, EventArgs e)
         {
-            if (!System.Text.RegularExpressions.Regex.IsMatch(box_phone.Text, @"^\d*$"))
-            {
-                MessageBox.Show("Solo se permiten números en el campo Celular.", "Entrada no válida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                box_phone.Text = new string(box_phone.Text.Where(char.IsDigit).ToArray());
-                box_phone.SelectionStart = box_phone.Text.Length;
-            }
+            
         }
 
         private void button3_Click(object sender, EventArgs e)

@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Information));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.box_concert = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -40,7 +41,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.box_concert = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.box_location = new System.Windows.Forms.TextBox();
             this.box_start_date = new System.Windows.Forms.TextBox();
@@ -62,6 +62,20 @@
             this.panel1.Size = new System.Drawing.Size(1319, 124);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // box_concert
+            // 
+            this.box_concert.BackColor = System.Drawing.Color.Black;
+            this.box_concert.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.box_concert.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.box_concert.ForeColor = System.Drawing.SystemColors.Window;
+            this.box_concert.Location = new System.Drawing.Point(491, 37);
+            this.box_concert.Margin = new System.Windows.Forms.Padding(4);
+            this.box_concert.Name = "box_concert";
+            this.box_concert.ReadOnly = true;
+            this.box_concert.Size = new System.Drawing.Size(575, 39);
+            this.box_concert.TabIndex = 35;
+            this.box_concert.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button1
             // 
@@ -111,7 +125,7 @@
             this.btn_ticket.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ticket.ForeColor = System.Drawing.SystemColors.Control;
             this.btn_ticket.Location = new System.Drawing.Point(562, 580);
-            this.btn_ticket.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_ticket.Margin = new System.Windows.Forms.Padding(4);
             this.btn_ticket.Name = "btn_ticket";
             this.btn_ticket.Size = new System.Drawing.Size(153, 49);
             this.btn_ticket.TabIndex = 6;
@@ -154,20 +168,6 @@
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            // 
-            // box_concert
-            // 
-            this.box_concert.BackColor = System.Drawing.Color.Black;
-            this.box_concert.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.box_concert.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.box_concert.ForeColor = System.Drawing.SystemColors.Window;
-            this.box_concert.Location = new System.Drawing.Point(491, 37);
-            this.box_concert.Margin = new System.Windows.Forms.Padding(4);
-            this.box_concert.Name = "box_concert";
-            this.box_concert.ReadOnly = true;
-            this.box_concert.Size = new System.Drawing.Size(575, 39);
-            this.box_concert.TabIndex = 35;
-            this.box_concert.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label6
             // 
@@ -262,6 +262,7 @@
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Information";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Information_Load);
             this.panel1.ResumeLayout(false);

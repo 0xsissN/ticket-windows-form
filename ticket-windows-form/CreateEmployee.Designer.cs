@@ -49,12 +49,11 @@
             this.box_phone = new System.Windows.Forms.TextBox();
             this.txtCarnetIdentidad = new System.Windows.Forms.Label();
             this.txtFechaNacimiento = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.box_hiring_date = new System.Windows.Forms.DateTimePicker();
             this.box_birthdate = new System.Windows.Forms.DateTimePicker();
+            this.button5 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,10 +62,10 @@
             this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(175, 407);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.button1.Location = new System.Drawing.Point(408, 499);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(137, 53);
+            this.button1.Size = new System.Drawing.Size(183, 65);
             this.button1.TabIndex = 75;
             this.button1.Text = "Guardar Datos";
             this.button1.UseVisualStyleBackColor = false;
@@ -75,32 +74,31 @@
             // box_charge
             // 
             this.box_charge.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.box_charge.Location = new System.Drawing.Point(727, 216);
-            this.box_charge.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.box_charge.Location = new System.Drawing.Point(969, 266);
+            this.box_charge.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.box_charge.Multiline = true;
             this.box_charge.Name = "box_charge";
-            this.box_charge.Size = new System.Drawing.Size(225, 25);
+            this.box_charge.Size = new System.Drawing.Size(299, 30);
             this.box_charge.TabIndex = 73;
             this.box_charge.TextChanged += new System.EventHandler(this.box_charge_TextChanged);
             // 
             // box_salary
             // 
             this.box_salary.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.box_salary.Location = new System.Drawing.Point(727, 162);
-            this.box_salary.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.box_salary.Location = new System.Drawing.Point(969, 199);
+            this.box_salary.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.box_salary.Multiline = true;
             this.box_salary.Name = "box_salary";
-            this.box_salary.Size = new System.Drawing.Size(225, 25);
+            this.box_salary.Size = new System.Drawing.Size(299, 30);
             this.box_salary.TabIndex = 72;
             // 
             // box
             // 
             this.box.AutoSize = true;
             this.box.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.box.Location = new System.Drawing.Point(503, 218);
-            this.box.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.box.Location = new System.Drawing.Point(671, 268);
             this.box.Name = "box";
-            this.box.Size = new System.Drawing.Size(72, 23);
+            this.box.Size = new System.Drawing.Size(90, 28);
             this.box.TabIndex = 70;
             this.box.Text = "Cargo :";
             // 
@@ -108,41 +106,40 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(503, 279);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(671, 343);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(69, 23);
+            this.label6.Size = new System.Drawing.Size(87, 28);
             this.label6.TabIndex = 69;
             this.label6.Text = "Email :";
             // 
             // box_password
             // 
             this.box_password.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.box_password.Location = new System.Drawing.Point(727, 330);
-            this.box_password.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.box_password.Location = new System.Drawing.Point(969, 406);
+            this.box_password.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.box_password.Multiline = true;
             this.box_password.Name = "box_password";
-            this.box_password.Size = new System.Drawing.Size(225, 25);
+            this.box_password.Size = new System.Drawing.Size(299, 30);
             this.box_password.TabIndex = 67;
+            this.box_password.TextChanged += new System.EventHandler(this.box_password_TextChanged);
             // 
             // box_email
             // 
             this.box_email.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.box_email.Location = new System.Drawing.Point(727, 277);
-            this.box_email.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.box_email.Location = new System.Drawing.Point(969, 341);
+            this.box_email.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.box_email.Multiline = true;
             this.box_email.Name = "box_email";
-            this.box_email.Size = new System.Drawing.Size(225, 25);
+            this.box_email.Size = new System.Drawing.Size(299, 30);
             this.box_email.TabIndex = 66;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(503, 107);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(671, 132);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(221, 23);
+            this.label8.Size = new System.Drawing.Size(271, 28);
             this.label8.TabIndex = 65;
             this.label8.Text = "Fecha de Contratacion :";
             // 
@@ -150,10 +147,9 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(503, 162);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Location = new System.Drawing.Point(671, 199);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(81, 23);
+            this.label9.Size = new System.Drawing.Size(99, 28);
             this.label9.TabIndex = 64;
             this.label9.Text = "Sueldo :";
             // 
@@ -161,10 +157,9 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(503, 332);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Location = new System.Drawing.Point(671, 409);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(117, 23);
+            this.label10.Size = new System.Drawing.Size(143, 28);
             this.label10.TabIndex = 63;
             this.label10.Text = "Contraseña:";
             // 
@@ -173,10 +168,9 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial Black", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(336, 20);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(448, 25);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(309, 38);
+            this.label4.Size = new System.Drawing.Size(389, 48);
             this.label4.TabIndex = 61;
             this.label4.Text = "Registrar Empleado";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -185,40 +179,40 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label3.Location = new System.Drawing.Point(170, 46);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(227, 57);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 25);
+            this.label3.Size = new System.Drawing.Size(0, 29);
             this.label3.TabIndex = 60;
             // 
             // box_maternal
             // 
-            this.box_maternal.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.box_maternal.Location = new System.Drawing.Point(244, 279);
-            this.box_maternal.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.box_maternal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.box_maternal.Location = new System.Drawing.Point(325, 343);
+            this.box_maternal.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.box_maternal.Multiline = true;
             this.box_maternal.Name = "box_maternal";
-            this.box_maternal.Size = new System.Drawing.Size(225, 25);
+            this.box_maternal.Size = new System.Drawing.Size(299, 30);
             this.box_maternal.TabIndex = 59;
             // 
             // box_paternal
             // 
             this.box_paternal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.box_paternal.Location = new System.Drawing.Point(244, 221);
-            this.box_paternal.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.box_paternal.Location = new System.Drawing.Point(325, 272);
+            this.box_paternal.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.box_paternal.Multiline = true;
             this.box_paternal.Name = "box_paternal";
-            this.box_paternal.Size = new System.Drawing.Size(225, 25);
+            this.box_paternal.Size = new System.Drawing.Size(299, 30);
             this.box_paternal.TabIndex = 58;
+            this.box_paternal.TextChanged += new System.EventHandler(this.box_paternal_TextChanged);
             // 
             // box_name
             // 
             this.box_name.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.box_name.Location = new System.Drawing.Point(244, 113);
-            this.box_name.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.box_name.Location = new System.Drawing.Point(325, 139);
+            this.box_name.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.box_name.Multiline = true;
             this.box_name.Name = "box_name";
-            this.box_name.Size = new System.Drawing.Size(225, 25);
+            this.box_name.Size = new System.Drawing.Size(299, 30);
             this.box_name.TabIndex = 57;
             this.box_name.TextChanged += new System.EventHandler(this.box_name_TextChanged);
             // 
@@ -226,10 +220,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(36, 279);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(48, 343);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(170, 23);
+            this.label1.Size = new System.Drawing.Size(212, 28);
             this.label1.TabIndex = 56;
             this.label1.Text = "Apellido Materno :";
             // 
@@ -237,10 +230,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(36, 221);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(48, 272);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(167, 23);
+            this.label2.Size = new System.Drawing.Size(207, 28);
             this.label2.TabIndex = 55;
             this.label2.Text = "Apellido Paterno :";
             // 
@@ -249,31 +241,29 @@
             this.txtNombre.AutoSize = true;
             this.txtNombre.BackColor = System.Drawing.SystemColors.Control;
             this.txtNombre.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(36, 113);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.txtNombre.Location = new System.Drawing.Point(48, 139);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(89, 23);
+            this.txtNombre.Size = new System.Drawing.Size(111, 28);
             this.txtNombre.TabIndex = 54;
             this.txtNombre.Text = "Nombre :";
             // 
             // box_phone
             // 
             this.box_phone.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.box_phone.Location = new System.Drawing.Point(244, 333);
-            this.box_phone.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.box_phone.Location = new System.Drawing.Point(325, 410);
+            this.box_phone.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.box_phone.Multiline = true;
             this.box_phone.Name = "box_phone";
-            this.box_phone.Size = new System.Drawing.Size(225, 25);
+            this.box_phone.Size = new System.Drawing.Size(299, 30);
             this.box_phone.TabIndex = 52;
             // 
             // txtCarnetIdentidad
             // 
             this.txtCarnetIdentidad.AutoSize = true;
             this.txtCarnetIdentidad.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCarnetIdentidad.Location = new System.Drawing.Point(36, 335);
-            this.txtCarnetIdentidad.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.txtCarnetIdentidad.Location = new System.Drawing.Point(48, 412);
             this.txtCarnetIdentidad.Name = "txtCarnetIdentidad";
-            this.txtCarnetIdentidad.Size = new System.Drawing.Size(82, 23);
+            this.txtCarnetIdentidad.Size = new System.Drawing.Size(104, 28);
             this.txtCarnetIdentidad.TabIndex = 50;
             this.txtCarnetIdentidad.Text = "Celular :";
             // 
@@ -281,58 +271,30 @@
             // 
             this.txtFechaNacimiento.AutoSize = true;
             this.txtFechaNacimiento.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFechaNacimiento.Location = new System.Drawing.Point(36, 169);
-            this.txtFechaNacimiento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.txtFechaNacimiento.Location = new System.Drawing.Point(48, 208);
             this.txtFechaNacimiento.Name = "txtFechaNacimiento";
-            this.txtFechaNacimiento.Size = new System.Drawing.Size(205, 23);
+            this.txtFechaNacimiento.Size = new System.Drawing.Size(251, 28);
             this.txtFechaNacimiento.TabIndex = 49;
             this.txtFechaNacimiento.Text = "Fecha de nacimiento :";
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.Control;
-            this.button2.Location = new System.Drawing.Point(427, 407);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(165, 55);
-            this.button2.TabIndex = 76;
-            this.button2.Text = "Registrar Artista";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.Control;
-            this.button3.Location = new System.Drawing.Point(697, 407);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(145, 53);
-            this.button3.TabIndex = 77;
-            this.button3.Text = "Registrar Concierto";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Location = new System.Drawing.Point(1, -3);
+            this.panel1.Location = new System.Drawing.Point(1, -4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(989, 72);
+            this.panel1.Size = new System.Drawing.Size(1319, 89);
             this.panel1.TabIndex = 78;
             // 
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(39, 18);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.button4.Location = new System.Drawing.Point(52, 22);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(85, 40);
+            this.button4.Size = new System.Drawing.Size(113, 49);
             this.button4.TabIndex = 19;
             this.button4.Text = "Volver";
             this.button4.UseVisualStyleBackColor = true;
@@ -341,31 +303,46 @@
             // box_hiring_date
             // 
             this.box_hiring_date.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.box_hiring_date.Location = new System.Drawing.Point(728, 107);
+            this.box_hiring_date.Location = new System.Drawing.Point(971, 132);
+            this.box_hiring_date.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.box_hiring_date.Name = "box_hiring_date";
-            this.box_hiring_date.Size = new System.Drawing.Size(224, 26);
+            this.box_hiring_date.Size = new System.Drawing.Size(297, 30);
             this.box_hiring_date.TabIndex = 79;
             this.box_hiring_date.ValueChanged += new System.EventHandler(this.box_hiring_date_ValueChanged);
             // 
             // box_birthdate
             // 
             this.box_birthdate.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.box_birthdate.Location = new System.Drawing.Point(246, 173);
+            this.box_birthdate.Location = new System.Drawing.Point(328, 213);
+            this.box_birthdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.box_birthdate.Name = "box_birthdate";
-            this.box_birthdate.Size = new System.Drawing.Size(226, 26);
+            this.box_birthdate.Size = new System.Drawing.Size(300, 30);
             this.box_birthdate.TabIndex = 80;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.SystemColors.Control;
+            this.button5.Location = new System.Drawing.Point(710, 499);
+            this.button5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(220, 68);
+            this.button5.TabIndex = 81;
+            this.button5.Text = "Editar Empleado";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // CreateEmployee
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(987, 487);
+            this.ClientSize = new System.Drawing.Size(1316, 599);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.box_birthdate);
             this.Controls.Add(this.box_hiring_date);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.box_charge);
             this.Controls.Add(this.box_salary);
@@ -386,8 +363,9 @@
             this.Controls.Add(this.box_phone);
             this.Controls.Add(this.txtCarnetIdentidad);
             this.Controls.Add(this.txtFechaNacimiento);
-            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "CreateEmployee";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EmployeeCreate";
             this.Load += new System.EventHandler(this.CreateEmployee_Load);
             this.panel1.ResumeLayout(false);
@@ -420,11 +398,10 @@
         private System.Windows.Forms.TextBox box_phone;
         private System.Windows.Forms.Label txtCarnetIdentidad;
         private System.Windows.Forms.Label txtFechaNacimiento;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.DateTimePicker box_hiring_date;
         private System.Windows.Forms.DateTimePicker box_birthdate;
+        private System.Windows.Forms.Button button5;
     }
 }

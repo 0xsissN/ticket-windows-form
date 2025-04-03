@@ -137,6 +137,30 @@
     <Compile Include="CreateEmployee.Designer.cs">
       <DependentUpon>CreateEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="EArtist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EArtist.Designer.cs">
+      <DependentUpon>EArtist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EConcert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EConcert.Designer.cs">
+      <DependentUpon>EConcert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EEmployee.Designer.cs">
+      <DependentUpon>EEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EOption.Designer.cs">
+      <DependentUpon>EOption.cs</DependentUpon>
+    </Compile>
     <Compile Include="Index.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,6 +210,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CreateReceipt.resx">
       <DependentUpon>CreateReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EArtist.resx">
+      <DependentUpon>EArtist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EConcert.resx">
+      <DependentUpon>EConcert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EEmployee.resx">
+      <DependentUpon>EEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EOption.resx">
+      <DependentUpon>EOption.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Index.resx">
       <DependentUpon>Index.cs</DependentUpon>

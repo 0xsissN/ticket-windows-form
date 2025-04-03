@@ -21,7 +21,7 @@ namespace ticket_windows_form
             box_capacity.KeyPress += new KeyPressEventHandler(Restriction.OnlyNumbers);
             box_organization.KeyPress += new KeyPressEventHandler(Restriction.OnlyLetters);
             box_location.KeyPress += new KeyPressEventHandler(Restriction.OnlyLetters);
-            textBox1.KeyPress += new KeyPressEventHandler(Restriction.OnlyLetters);
+            textBox1.KeyPress += new KeyPressEventHandler(Restriction.OnlyNumbers);
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -58,7 +58,6 @@ namespace ticket_windows_form
                 {
                     MessageBox.Show("Concierto agregado con éxito", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.DialogResult = DialogResult.OK;
-                    this.Close();
                 }
                 else
                 {
@@ -223,8 +222,8 @@ namespace ticket_windows_form
 
         private void button4_Click(object sender, EventArgs e)
         {
-            CreateEmployee xd = new CreateEmployee();
-            xd.Show();
+            EOption option = new EOption();
+            option.Show();
             this.Close();
         }
 
@@ -236,6 +235,13 @@ namespace ticket_windows_form
         private void box_end_date_ValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            EConcert econcert = new EConcert();
+            econcert.Show();
+            this.Hide();
         }
     }
 }

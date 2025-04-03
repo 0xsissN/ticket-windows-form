@@ -16,14 +16,13 @@ namespace ticket_windows_form
         public CreateEmployee()
         {
             InitializeComponent();
-            box_maternal.KeyPress += new KeyPressEventHandler(Restriction.OnlyLetters);
+            
             box_paternal.KeyPress += new KeyPressEventHandler(Restriction.OnlyLetters);
             box_name.KeyPress += new KeyPressEventHandler(Restriction.OnlyLetters);
             box_phone.KeyPress += new KeyPressEventHandler(Restriction.OnlyNumbers);
             box_salary.KeyPress += new KeyPressEventHandler(Restriction.OnlyNumbers);
             box_charge.KeyPress += new KeyPressEventHandler(Restriction.OnlyLetters);
-            box_email.KeyPress += new KeyPressEventHandler(Restriction.OnlyLetters);
-            box_password.KeyPress += new KeyPressEventHandler(Restriction.OnlyLetters);
+            box_maternal.KeyPress += new KeyPressEventHandler(Restriction.OnlyLetters);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -88,8 +87,8 @@ namespace ticket_windows_form
 
         private void button4_Click(object sender, EventArgs e)
         {
-            User user = new User();
-            user.Show();
+            EOption option = new EOption();
+            option.Show();
             this.Close();
         }
 
@@ -99,6 +98,23 @@ namespace ticket_windows_form
         }
 
         private void box_hiring_date_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            EEmployee eemployee = new EEmployee();
+            eemployee.Show();
+            this.Hide();
+        }
+
+        private void box_paternal_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void box_password_TextChanged(object sender, EventArgs e)
         {
 
         }

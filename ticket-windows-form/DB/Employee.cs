@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -90,5 +91,78 @@ namespace ticket_windows_form.DB
             }
             return res;
         }
+        public static bool Edit_Employeess(int idEmployee, string name, string paternal, string maternal,
+                                 string phone, string email, string password, DateTime birthdate,
+                                 int salary, DateTime hiring_date, string charge)
+        {
+            try
+            {
+                NpgsqlConnection connection = Connection.GetConnection();
+                if (connection == null || connection.State != System.Data.ConnectionState.Open)
+                {
+                    MessageBox.Show("No se pudo establecer conexión con la base de datos.");
+                    return false;
+                }
+
+                string query = @"UPDATE empleado 
+                         SET nombre = @name, ap_paterno = @paternal, ap_materno = @maternal, 
+                             telefono = @phone, correo_electronico = @email, contrasena = @password, 
+                             fecha_nacimiento = @birthdate, sueldo = @salary, 
+                             fecha_contratacion = @hiring_date, cargo = @charge
+                         WHERE id_empleado = @idEmployee";
+
+                using (NpgsqlCommand cmd = new NpgsqlCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@idEmployee", idEmployee);
+                    cmd.Parameters.AddWithValue("@name", name);
+                    cmd.Parameters.AddWithValue("@paternal", paternal);
+                    cmd.Parameters.AddWithValue("@maternal", maternal);
+                    cmd.Parameters.AddWithValue("@phone", phone);
+                    cmd.Parameters.AddWithValue("@email", email);
+                    cmd.Parameters.AddWithValue("@password", password);
+                    cmd.Parameters.AddWithValue("@birthdate", birthdate);
+                    cmd.Parameters.AddWithValue("@salary", salary);
+                    cmd.Parameters.AddWithValue("@hiring_date", hiring_date);
+                    cmd.Parameters.AddWithValue("@charge", charge);
+
+                    int rowsAffected = cmd.ExecuteNonQuery();
+                    return rowsAffected > 0;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al editar el empleado: " + ex.Message);
+                return false;
+            }
+        }
+
+        public static DataTable GetEmployees()
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                NpgsqlConnection connection = Connection.GetConnection();
+                string query = @"SELECT id_empleado, nombre, ap_paterno, ap_materno, telefono, 
+                                correo_electronico, fecha_nacimiento, sueldo, 
+                                fecha_contratacion, cargo
+                         FROM empleado
+                         ORDER BY id_empleado ASC";
+
+                using (NpgsqlCommand cmd = new NpgsqlCommand(query, connection))
+                {
+                    using (NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd))
+                    {
+                        da.Fill(dt);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al obtener la lista de empleados: " + ex.Message);
+            }
+
+            return dt;
+        }
+
     }
 }

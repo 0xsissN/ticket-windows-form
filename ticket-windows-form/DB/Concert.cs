@@ -14,10 +14,14 @@ namespace ticket_windows_form.DB
     {
         private static int id_employee;
         private static int id_zona;
-
         public static bool CreateConcert(
-            string location, int capacity, string organization,
-            string concert_name, DateTime start_date, DateTime end_date, int id_artist)
+            string location,
+            int capacity,
+            string organization,
+            string concert_name,
+            DateTime start_date, 
+            DateTime end_date, 
+            int id_artist)
         {
             bool res = false;
             try
@@ -222,19 +226,18 @@ namespace ticket_windows_form.DB
             return concert_artist;
         }
 
-        public static bool Edit_Concert(
-    int idConcert, string location, int capacity, string organization,
-    string concertName, DateTime startDate, DateTime endDate)
+        public static bool EditConcert(
+            int idConcert,
+            string location, 
+            int capacity, 
+            string organization,
+            string concertName,
+            DateTime startDate,
+            DateTime endDate)
         {
             try
             {
-
                 NpgsqlConnection connection = Connection.GetConnection();
-                if (connection == null || connection.State != System.Data.ConnectionState.Open)
-                {
-                    MessageBox.Show("No se pudo establecer conexión con la base de datos.");
-                    return false;
-                }
 
                 string query = @"UPDATE concierto 
                          SET ubicacion_concierto = @location, 

@@ -11,7 +11,10 @@ namespace ticket_windows_form.DB
 {
     internal class SellTickets
     {
-        public static void AddTicket(int concert_id, int client_id, decimal total_cost)
+        public static void AddTicket(
+            int concert_id,
+            int client_id, 
+            decimal total_cost)
         {
             try
             {

@@ -108,7 +108,7 @@ namespace ticket_windows_form
             {
                 Artist artist = new Artist();
 
-                if (artist.Edit_Artist(idArtist, name, paternal, maternal, stageName, manager, birthdate))
+                if (artist.EditArtist(idArtist, name, paternal, maternal, stageName, manager, birthdate))
                 {
                     MessageBox.Show("Artista actualizado con éxito.");
                     dataGridView1.DataSource = Artist.SaveArtists(idArtist);

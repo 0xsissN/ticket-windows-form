@@ -11,7 +11,10 @@ namespace ticket_windows_form.DB
 {
     internal class SellDetails
     {
-        public static void AddDetailSale(int sale_ticket_id, string chosen_zone, decimal unit_price)
+        public static void AddDetailSale(
+            int sale_ticket_id, 
+            string chosen_zone, 
+            decimal unit_price)
         {
             try
             {

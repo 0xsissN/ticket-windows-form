@@ -11,7 +11,6 @@ using System.Windows.Forms;
 using System.Windows.Media.Media3D;
 using System.Xml.Linq;
 using ticket_windows_form.DB;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace ticket_windows_form
 {

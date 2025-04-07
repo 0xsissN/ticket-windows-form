@@ -12,7 +12,17 @@ namespace ticket_windows_form.DB
 {
     internal class Employee
     {
-        public static bool AddEmployee(string name, string paternal, string maternal, string phone, string email, string password, DateTime birthdate, int salary, DateTime hiring_date, string charge) 
+        public static bool AddEmployee(
+            string name,
+            string paternal, 
+            string maternal, 
+            string phone, 
+            string email,
+            string password, 
+            DateTime birthdate, 
+            int salary, 
+            DateTime hiring_date,
+            string charge) 
         {
             bool res = false;
             try
@@ -91,18 +101,22 @@ namespace ticket_windows_form.DB
             }
             return res;
         }
-        public static bool Edit_Employeess(int idEmployee, string name, string paternal, string maternal,
-                                 string phone, string email, string password, DateTime birthdate,
-                                 int salary, DateTime hiring_date, string charge)
+        public static bool EditEmployeess(
+            int idEmployee, 
+            string name, 
+            string paternal, 
+            string maternal,
+            string phone, 
+            string email, 
+            string password,
+            DateTime birthdate,
+            int salary, 
+            DateTime hiring_date,
+            string charge)
         {
             try
             {
                 NpgsqlConnection connection = Connection.GetConnection();
-                if (connection == null || connection.State != System.Data.ConnectionState.Open)
-                {
-                    MessageBox.Show("No se pudo establecer conexión con la base de datos.");
-                    return false;
-                }
 
                 string query = @"UPDATE empleado 
                          SET nombre = @name, ap_paterno = @paternal, ap_materno = @maternal, 

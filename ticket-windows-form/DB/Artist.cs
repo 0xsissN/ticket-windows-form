@@ -12,8 +12,13 @@ namespace ticket_windows_form.DB
     internal class Artist
     {
         public static int CreateArtist(
-            string name, string paternal, string maternal, string stage_name,
-            string manager, DateTime birthdate, NpgsqlConnection connection)
+            string name, 
+            string paternal, 
+            string maternal, 
+            string stage_name,
+            string manager, 
+            DateTime birthdate, 
+            NpgsqlConnection connection)
         {
             try
             {
@@ -83,18 +88,19 @@ namespace ticket_windows_form.DB
 
             return dt;
         }
-        public bool Edit_Artist(
-    int idArtist, string name, string paternal, string maternal,
-    string stageName, string manager, DateTime birthdate)
+        public bool EditArtist(
+            int idArtist, 
+            string name, 
+            string paternal,
+            string maternal,
+            string stageName, 
+            string manager, 
+            DateTime birthdate)
         {
             try
             {
                 NpgsqlConnection connection = Connection.GetConnection();
-                if (connection == null || connection.State != System.Data.ConnectionState.Open)
-                {
-                    MessageBox.Show("No se pudo establecer conexión con la base de datos.");
-                    return false;
-                }
+
                 string query = @"
             UPDATE artista 
             SET nombre = @name, ap_paterno = @paternal, ap_materno = @maternal, 

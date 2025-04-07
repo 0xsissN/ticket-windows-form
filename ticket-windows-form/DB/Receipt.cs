@@ -11,7 +11,9 @@ namespace ticket_windows_form.DB
 {
     internal class Receipt
     {
-        public static void GenerateReceipt(int sale_ticket_id, string payment_method)
+        public static void GenerateReceipt(
+            int sale_ticket_id,
+            string payment_method)
         {
             try
             {
@@ -59,6 +61,5 @@ namespace ticket_windows_form.DB
 
             return last_receipt_id;
         }
-
     }
 }

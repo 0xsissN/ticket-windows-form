@@ -103,7 +103,7 @@ namespace ticket_windows_form
                     return;
                 }
 
-                if (Concert.Edit_Concert(idConcert, location, capacity, organization, concert_name, start_date, end_date))
+                if (Concert.EditConcert(idConcert, location, capacity, organization, concert_name, start_date, end_date))
                 {
                     MessageBox.Show("Concierto actualizado con éxito.");
                     dataGridView1.DataSource = Concert.GetConcerts();

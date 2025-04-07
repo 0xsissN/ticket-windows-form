@@ -84,7 +84,7 @@ namespace ticket_windows_form
                 DateTime hiring_date = box_hiring_date.Value;
                 string charge = box_charge.Text;
 
-                bool success = Employee.Edit_Employeess(idEmployee, name, paternal, maternal, phone, email, password, birthdate, salary, hiring_date, charge);
+                bool success = Employee.EditEmployeess(idEmployee, name, paternal, maternal, phone, email, password, birthdate, salary, hiring_date, charge);
 
                 if (success)
                 {

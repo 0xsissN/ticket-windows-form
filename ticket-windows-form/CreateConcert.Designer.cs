@@ -243,7 +243,7 @@
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Location = new System.Drawing.Point(1, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1319, 89);
             this.panel1.TabIndex = 80;
@@ -273,7 +273,7 @@
             // 
             this.box_start_date.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.box_start_date.Location = new System.Drawing.Point(345, 421);
-            this.box_start_date.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.box_start_date.Margin = new System.Windows.Forms.Padding(4);
             this.box_start_date.Name = "box_start_date";
             this.box_start_date.Size = new System.Drawing.Size(297, 30);
             this.box_start_date.TabIndex = 81;
@@ -283,7 +283,7 @@
             // 
             this.box_end_date.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.box_end_date.Location = new System.Drawing.Point(347, 490);
-            this.box_end_date.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.box_end_date.Margin = new System.Windows.Forms.Padding(4);
             this.box_end_date.Name = "box_end_date";
             this.box_end_date.Size = new System.Drawing.Size(297, 30);
             this.box_end_date.TabIndex = 82;
@@ -294,7 +294,7 @@
             this.button3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button3.Font = new System.Drawing.Font("Arial Black", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.Control;
-            this.button3.Location = new System.Drawing.Point(436, 598);
+            this.button3.Location = new System.Drawing.Point(446, 598);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(277, 76);

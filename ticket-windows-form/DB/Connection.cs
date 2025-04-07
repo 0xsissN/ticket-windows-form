@@ -17,7 +17,6 @@ namespace ticket_windows_form.DB
 
         private static string conn = "server=" + server + ";" + "port=" + port + ";" + "user id=" + user + ";" + "password=" + password + ";" + "database=" + bd + ";";
         private static NpgsqlConnection connection = new NpgsqlConnection(conn);
-
         public static NpgsqlConnection GetConnection()
         {
             if (connection == null)

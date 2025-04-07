@@ -131,7 +131,7 @@
             this.label1.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(82, 400);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(268, 35);
+            this.label1.Size = new System.Drawing.Size(214, 28);
             this.label1.TabIndex = 86;
             this.label1.Text = "Nombre Artistico :";
             // 
@@ -173,7 +173,7 @@
             this.txtCarnetIdentidad.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCarnetIdentidad.Location = new System.Drawing.Point(82, 469);
             this.txtCarnetIdentidad.Name = "txtCarnetIdentidad";
-            this.txtCarnetIdentidad.Size = new System.Drawing.Size(149, 35);
+            this.txtCarnetIdentidad.Size = new System.Drawing.Size(119, 28);
             this.txtCarnetIdentidad.TabIndex = 82;
             this.txtCarnetIdentidad.Text = "Manager :";
             this.txtCarnetIdentidad.Click += new System.EventHandler(this.txtCarnetIdentidad_Click);
@@ -204,7 +204,7 @@
             this.label4.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(86, 537);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(305, 35);
+            this.label4.Size = new System.Drawing.Size(244, 28);
             this.label4.TabIndex = 91;
             this.label4.Text = "Elegir id Para Editar :";
             // 
@@ -221,14 +221,16 @@
             // 
             // save_editArtist
             // 
+            this.save_editArtist.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.save_editArtist.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.save_editArtist.Location = new System.Drawing.Point(589, 642);
+            this.save_editArtist.ForeColor = System.Drawing.SystemColors.Control;
+            this.save_editArtist.Location = new System.Drawing.Point(588, 629);
             this.save_editArtist.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.save_editArtist.Name = "save_editArtist";
-            this.save_editArtist.Size = new System.Drawing.Size(125, 49);
+            this.save_editArtist.Size = new System.Drawing.Size(135, 60);
             this.save_editArtist.TabIndex = 21;
             this.save_editArtist.Text = "Guardar";
-            this.save_editArtist.UseVisualStyleBackColor = true;
+            this.save_editArtist.UseVisualStyleBackColor = false;
             this.save_editArtist.Click += new System.EventHandler(this.button2_Click);
             // 
             // EArtist

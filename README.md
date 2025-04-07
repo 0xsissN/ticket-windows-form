@@ -28,7 +28,4 @@ To run this project locally:
 4. Update the database connection string if needed.
 5. Build and run the project.
 
-## 📸 Screenshots
-
-*(You can add some screenshots here)*
 

@@ -135,9 +135,9 @@ namespace ticket_windows_form.DB
                 NpgsqlConnection connection = Connection.GetConnection();
                 {
                     string query = @"
-                SELECT id_artista, nombre, ap_paterno, ap_materno, nom_artistico, manager, fecha_nacimiento 
-                FROM artista
-                ORDER BY id_artista ASC";
+                        SELECT id_artista, nombre, ap_paterno, ap_materno, nom_artistico, manager, fecha_nacimiento 
+                        FROM artista
+                        ORDER BY id_artista ASC";
 
                     using (NpgsqlCommand cmd = new NpgsqlCommand(query, connection))
                     {

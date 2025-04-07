@@ -280,6 +280,7 @@
     <Content Include="Properties\artista_3.jpg" />
     <Content Include="Properties\coliseo.png" />
     <Content Include="script-db.sql" />
+    <Content Include="Script.sql" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
